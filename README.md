@@ -1,0 +1,1 @@
+Kerbal space program does not allow saving in the steam cloud, so I'm using github to sync my saves across my computers.
