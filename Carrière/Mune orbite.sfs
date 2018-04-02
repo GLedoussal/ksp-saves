@@ -192,7 +192,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = -1000
+		update = 718012.08379856974
 		version = 1.4.2
 		WEIGHTS
 		{
@@ -200,7 +200,7 @@ GAME
 			SurveyContract = 60
 			StationContract = 30
 			SentinelContract = 30
-			SatelliteContract = 42
+			SatelliteContract = 30
 			ISRUContract = 30
 			ExplorationContract = 30
 			BaseContract = 30
@@ -225,7 +225,7 @@ GAME
 			Moho = 30
 			Minmus = 30
 			Mun = 30
-			Kerbin = 76
+			Kerbin = 64
 			Sun = 30
 		}
 		CONTRACTS
@@ -461,7 +461,7 @@ GAME
 				prestige = 0
 				seed = -2121432540
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = FLOOYD Dynamics Research Labs
 				deadlineType = Floating
 				expiryType = Floating
@@ -547,7 +547,7 @@ GAME
 				prestige = 0
 				seed = -2121432542
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
@@ -633,7 +633,7 @@ GAME
 				prestige = 0
 				seed = -2121432536
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Maxo Construction Toys
 				deadlineType = Floating
 				expiryType = Floating
@@ -700,12 +700,12 @@ GAME
 				type = SatelliteContract
 				prestige = 1
 				seed = -272164892
-				state = Active
-				viewed = Read
+				state = Offered
+				viewed = Seen
 				agent = FLOOYD Dynamics Research Labs
 				deadlineType = Floating
 				expiryType = Floating
-				values = 86400,46008000,42000,118387.50256598,46200.001001358,5,14.54545,9,731406.781639994,718030.383798587,46726030.3837986,0
+				values = 86400,46008000,42000,118387.50256598,46200.001001358,5,14.54545,9,731406.781639994,0,0,0
 				targetBody = 1
 				deviation = 5
 				orbitType = 6
@@ -714,20 +714,18 @@ GAME
 				{
 					name = VesselSystemsParameter
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
 					typeString = sonde
 					mannedStatus = 1
 					requireNew = True
 					checkModuleTypes = Antenna|Generator
 					checkModuleDescriptions = possède une antenne|peut produire de l'électricité
-					launchID = 22
+					launchID = 0
 				}
 				PARAM
 				{
 					name = SpecificOrbitParameter
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
 					TargetBody = 1
 					deviationWindow = 5
@@ -744,7 +742,6 @@ GAME
 				{
 					name = PartRequestParameter
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
 					article = a
 					partDescription = thermomètre
@@ -755,7 +752,6 @@ GAME
 				{
 					name = StabilityParameter
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
@@ -767,7 +763,7 @@ GAME
 				prestige = 1
 				seed = -1891219272
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = STEADLER Engineering Corps
 				deadlineType = Floating
 				expiryType = Floating
@@ -834,7 +830,7 @@ GAME
 				prestige = 1
 				seed = -120721402
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = O.M.B. Demolition Enterprises
 				deadlineType = Floating
 				expiryType = Floating
@@ -968,7 +964,7 @@ GAME
 				prestige = 2
 				seed = -1705941465
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Ionic Symphonic Protonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
@@ -984,7 +980,7 @@ GAME
 					name = AcquireCrew
 					state = Incomplete
 					values = 17820,0,0,6,0
-					title = Sauver Lauthel Kerman
+					title = Sauver Lauthel Kerman 
 					winOn = 0
 				}
 				PARAM
@@ -992,7 +988,7 @@ GAME
 					name = RecoverKerbal
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Récupérer Lauthel Kerman sur Kerbin
+					title = Récupérer Lauthel Kerman sur Kerbin 
 					failOn = All
 					winOn = All
 				}
@@ -2530,7 +2526,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 467139.60935448017
+		funds = 707139.60935448017
 	}
 	SCENARIO
 	{
@@ -2668,7 +2664,7 @@ GAME
 					}
 					crew
 					{
-						crews = Jebediah Kerman
+						crews = Jebediah Kerman, Libbaude Kerman, Joroch Kerman
 					}
 				}
 				Escape
@@ -2706,7 +2702,7 @@ GAME
 					}
 					crew
 					{
-						crews = Jebediah Kerman
+						crews = Jebediah Kerman, Libbaude Kerman, Joroch Kerman
 					}
 				}
 				Flyby
@@ -2733,7 +2729,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 118.743561
+		sci = 298.743561
 		Tech
 		{
 			id = start
@@ -2864,29 +2860,6 @@ GAME
 			part = batteryBankMini
 			part = solarPanels5
 			part = probeCoreOcto
-		}
-		Tech
-		{
-			id = heavyRocketry
-			state = Available
-			cost = 90
-			part = MassiveBooster
-			part = engineLargeSkipper
-			part = liquidEngine2-2
-		}
-		Tech
-		{
-			id = fuelSystems
-			state = Available
-			cost = 90
-			part = Rockomax8BW
-			part = Rockomax32.BW
-			part = Rockomax16.BW
-			part = fuelTank4-2
-			part = fuelTank1-2
-			part = fuelTank2-2
-			part = fuelTank.long
-			part = fuelLine
 		}
 		Science
 		{
@@ -3281,7 +3254,7 @@ GAME
 		Science
 		{
 			id = recovery@MunOrbited
-			title = Récupération d'un vaisseau de retour d'une orbite au-dessus de La Mune
+			title = Récupération d'un vaisseau de retour d'une orbite au-dessus de Mun
 			dsc = 1
 			scv = 0.166666701
 			sbv = 16
@@ -3588,7 +3561,7 @@ GAME
 		scene = 5, 6, 7, 8
 		SpaceCenter/LaunchPad
 		{
-			lvl = 1
+			lvl = 0.5
 		}
 		SpaceCenter/Runway
 		{
@@ -3636,7 +3609,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.2
-		UT = 718054.1237986089
+		UT = 718017.96379857522
 		activeVessel = 0
 		mapViewFiltering = 7167
 		commNetUIModeTracking = Network
