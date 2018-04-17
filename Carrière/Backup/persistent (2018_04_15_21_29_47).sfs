@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 649412673
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/default
 	launchID = 38
@@ -192,7 +192,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 6226043.3998374976
+		update = 6234528.9420286287
 		version = 1.4.2
 		WEIGHTS
 		{
@@ -223,7 +223,7 @@ GAME
 			Duna = 26
 			Eve = 30
 			Moho = 30
-			Minmus = 77
+			Minmus = 75
 			Mun = 90
 			Kerbin = 89
 			Sun = 28
@@ -597,42 +597,6 @@ GAME
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 6847b83d-07c8-4ab3-8f69-b78486d9b256
-				type = RecoverAsset
-				prestige = 1
-				seed = -1089490051
-				state = Offered
-				viewed = Read
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 38571.4282035828,102696427.592039,63038.7876927853,158420.851905273,80437.5017434359,0,13.62797,11.53846,6231313.03509421,0,0,0
-				targetBody = 3
-				kerbalName = Delrienne Kerman
-				partName = landerCabinSmall
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 18562,0,0,5,0
-					title = Sauver Delrienne Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Récupérer Delrienne Kerman sur Kerbin
-					failOn = All
-					winOn = All
 				}
 			}
 			CONTRACT
@@ -1329,6 +1293,113 @@ GAME
 					wpLongitude = 125.24115061590835
 					wpLandlocked = False
 					wpNavigationId = 9b426cf2-89e5-4445-ad02-6c20e62a9c2b
+				}
+			}
+			CONTRACT
+			{
+				guid = 6e0aea20-f730-4f51-a63f-bb474d762e0b
+				type = SurveyContract
+				prestige = 1
+				seed = 39394203
+				state = Offered
+				viewed = Unseen
+				agent = Vac-Co Advanced Suction Systems
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21176.4706134796,45105882.4067116,40545.0016129016,78792.454842186,43725.0035047532,0,9.433962,11,6255052.48090849,0,0,0
+				targetBody = 1
+				centerLatitude = -11.211150555914855
+				centerLongitude = -151.56222424076975
+				dataName = de température
+				anomalyName = changements
+				reportName = mesures
+				locationName = Kerbin^F
+				focusedSurvey = False
+				targetBand = HIGHMIX
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 11000,0,4,4,0
+					targetBody = 1
+					actionDescription = Mesurer la température
+					experiment = temperatureScan
+					flightThreshold = 17300
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 814260184
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -14.75032971905156
+					wpLongitude = -153.08878251999437
+					wpLandlocked = False
+					wpNavigationId = 6386401c-55ff-482c-9cab-0aeb47d58eab
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 11000,0,4,4,0
+					targetBody = 1
+					actionDescription = Mesurer la température
+					experiment = temperatureScan
+					flightThreshold = 18900
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 814260184
+					wpIndex = 1
+					wpTexture = thermometer
+					wpLatitude = -6.6515734850188961
+					wpLongitude = -149.42693061428707
+					wpLandlocked = False
+					wpNavigationId = 5fef7da2-1e68-42f5-a429-3b9abad27546
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 11000,0,4,4,0
+					targetBody = 1
+					actionDescription = Mesurer la température
+					experiment = temperatureScan
+					flightThreshold = 17100
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 814260184
+					wpIndex = 2
+					wpTexture = thermometer
+					wpLatitude = -15.837754980836275
+					wpLongitude = -161.10990094482457
+					wpLandlocked = False
+					wpNavigationId = 4006832d-7490-4032-9812-27f3bee525d0
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 11000,0,4,4,0
+					targetBody = 1
+					actionDescription = Mesurer la température
+					experiment = temperatureScan
+					flightThreshold = 18300
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 814260184
+					wpIndex = 3
+					wpTexture = thermometer
+					wpLatitude = -9.8053137797074932
+					wpLongitude = -146.29072066842178
+					wpLandlocked = False
+					wpNavigationId = 7463543a-3ec3-45c0-a702-90c6491a05bb
 				}
 			}
 			CONTRACT_FINISHED
@@ -7034,7 +7105,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.2
-		UT = 6226050.8967808103
+		UT = 6234536.9652415235
 		activeVessel = 39
 		mapViewFiltering = 7166
 		commNetUIModeTracking = Network
@@ -36661,11 +36732,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 17.948271821283448
+				INC = 17.94827182128347
 				LPE = 270
-				LAN = 0.7513656893002576
+				LAN = 86.681861301741662
 				MNA = 0
-				EPH = 6192875.9268879462
+				EPH = 6226050.9167808099
 				REF = 2
 			}
 			PART
@@ -36831,13 +36902,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300339.16597736633
-				ECC = 0.99999999999999989
+				SMA = 0
+				ECC = 1
 				INC = 0.16296632713134601
 				LPE = 270
-				LAN = 51.01978266362886
-				MNA = 3.1415926207170166
-				EPH = 6192875.9268879462
+				LAN = 245.23393269129184
+				MNA = 0
+				EPH = 6226050.9167808099
 				REF = 1
 			}
 			PART
@@ -36980,13 +37051,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300338.68266039266
-				ECC = 0.99999999999999989
+				SMA = 300338.68266039278
+				ECC = 0.99999999999999978
 				INC = 0.16348175682881991
 				LPE = 270
-				LAN = 51.018059431344398
-				MNA = -3.1415926207170166
-				EPH = 6192875.9268879462
+				LAN = 245.23220945900738
+				MNA = 3.1415926303452304
+				EPH = 6226050.9167808099
 				REF = 1
 			}
 			PART
@@ -37129,13 +37200,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300339.23973304848
+				SMA = 300339.2397330486
 				ECC = 0.99999999999999989
 				INC = 0.16282659483929321
 				LPE = 270
-				LAN = 51.020036177298778
-				MNA = -3.1415926207170166
-				EPH = 6192875.9268879462
+				LAN = 245.23418620496182
+				MNA = 3.1415926207170166
+				EPH = 6226050.9167808099
 				REF = 1
 			}
 			PART
@@ -38092,11 +38163,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 43.395890299925391
+				INC = 43.395890299925448
 				LPE = 90
-				LAN = 345.03516418895845
+				LAN = 70.965659801399852
 				MNA = 0
-				EPH = 6192875.9268879462
+				EPH = 6226050.9167808099
 				REF = 2
 			}
 			PART
@@ -40090,13 +40161,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 31355.35446907028
-				ECC = 0.99999999999999989
-				INC = 37.00113613620298
+				SMA = NaN
+				ECC = 1
+				INC = 37.001136136202113
 				LPE = 270
-				LAN = 178.92747351209005
-				MNA = 3.1415926207170166
-				EPH = 6192875.9268879462
+				LAN = 114.54619532968184
+				MNA = 0
+				EPH = 6226050.9167808099
 				REF = 3
 			}
 			PART
@@ -40741,7 +40812,7 @@ GAME
 			persistentId = 3919738532
 			name = Mun11 eco
 			type = Ship
-			sit = ORBITING
+			sit = SUB_ORBITAL
 			landed = False
 			skipGroundPositioning = False
 			vesselSpawning = False
@@ -40749,36 +40820,36 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 33171.529892941006
+			met = 41657.598353654146
 			lct = 6192879.3668878693
-			lastUT = 6226050.8967808103
-			distanceTraveled = 800048.61627852661
+			lastUT = 6234536.9652415235
+			distanceTraveled = 905258.84086786374
 			root = 0
-			lat = -11.174796736189476
-			lon = -100.50979176928472
-			alt = 13297.44963757912
+			lat = 84.983918680208276
+			lon = -177.38186055130095
+			alt = 103959.62337691698
 			hgt = -1
-			nrm = -0.020582974,0.995558381,-0.0918691456
-			rot = 0.288685888,-0.585737824,0.745877206,-0.13129662
-			CoM = -0.00141713023,-1.14358473,0.0010240078
+			nrm = -0.898571193,-0.236019015,0.3699525
+			rot = -0.271302611,-0.0377356447,-0.70609045,0.652998626
+			CoM = -0.00186149776,-1.26484561,0.00141072273
 			stg = 2
 			prst = False
 			ref = 98223884
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
-			cPch = -0.117
-			cHdg = -7.527001
+			cPch = 0.9963384
+			cHdg = 0.3518426
 			cMod = 0
 			ORBIT
 			{
-				SMA = 510653.78261586081
-				ECC = 0.58753144461252427
-				INC = 15.376249154732516
-				LPE = 327.9761491903617
-				LAN = 102.24562005047756
-				MNA = -0.055277343771098275
-				EPH = 6226050.8967808103
+				SMA = 187488.76182392711
+				ECC = 0.86985910945585221
+				INC = 89.376775582067538
+				LPE = 252.72484813269568
+				LAN = 354.31571403952381
+				MNA = -1.8207635406098335
+				EPH = 6234516.787448545
 				REF = 2
 			}
 			PART
@@ -40806,8 +40877,8 @@ GAME
 				attN = top, 1
 				mass = 2.5999999
 				shielded = False
-				temp = 189.78499354623668
-				tempExt = 186.14393622779065
+				temp = 248.16769907471479
+				tempExt = 251.60519823367488
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -40815,7 +40886,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Flags/default
-				rTrf = mk1-3pod
+				rTrf = mk1-3pod (Mun11 eco)
 				modCost = 0
 				crew = Jebediah Kerman
 				crew = Patthelmie Kerman
@@ -40861,7 +40932,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = En cours
+					stateString = En attente
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -41097,7 +41168,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 149.63129108317955
+					amount = 150
 					maxAmount = 150
 					flowState = True
 					isTweakable = True
@@ -41108,7 +41179,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 30
+					amount = 27.776136934450971
 					maxAmount = 30
 					flowState = True
 					isTweakable = True
@@ -41142,8 +41213,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.200000003
 				shielded = False
-				temp = 189.32323497092995
-				tempExt = 182.72470091540069
+				temp = 225.26503098833891
+				tempExt = 228.46736970322831
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -41241,8 +41312,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 189.80459625659165
-				tempExt = 176.48561809936209
+				temp = 222.67027357258206
+				tempExt = 219.11414858056736
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -41355,8 +41426,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 189.57577428026332
-				tempExt = 183.21185835292985
+				temp = 224.78429330790138
+				tempExt = 224.78718201022104
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41445,8 +41516,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.0500000007
 				shielded = True
-				temp = 189.65939998226514
-				tempExt = 187.09419443821722
+				temp = 224.82496340526643
+				tempExt = 224.82607812638895
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41540,8 +41611,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 189.24537685618532
-				tempExt = 186.795227225731
+				temp = 224.69124814310192
+				tempExt = 224.69407071874807
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41630,8 +41701,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41653,7 +41724,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41685,8 +41756,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41708,7 +41779,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41740,8 +41811,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41763,7 +41834,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41795,8 +41866,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41818,7 +41889,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41850,8 +41921,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41873,7 +41944,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41905,8 +41976,8 @@ GAME
 				srfN = srfAttach, 2
 				mass = 0.00499999989
 				shielded = True
-				temp = 188.00255998373726
-				tempExt = 185.88668995444715
+				temp = 224.50327651299398
+				tempExt = 224.50854558056238
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -41928,7 +41999,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.754194055453027
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -41961,9 +42032,9 @@ GAME
 				attN = top, 13
 				attN = bottom, 2
 				mass = 0.0799999982
-				shielded = False
-				temp = 189.88064266317585
-				tempExt = 182.06885684559873
+				shielded = True
+				temp = 224.8596644573891
+				tempExt = 224.86182768377657
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -41985,7 +42056,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 120
+					amount = 111.10454773780388
 					maxAmount = 120
 					flowState = True
 					isTweakable = True
@@ -42018,8 +42089,8 @@ GAME
 				attN = bottom, 12
 				mass = 0.300000012
 				shielded = False
-				temp = 189.69967160158106
-				tempExt = 185.19151445497818
+				temp = 223.34116683052923
+				tempExt = 223.5144066381385
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42141,8 +42212,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.0299999993
 				shielded = False
-				temp = 189.74682551846695
-				tempExt = 184.96677850538214
+				temp = 224.0558132849161
+				tempExt = 223.47378021760488
 				tempExtUnexp = 303.78553298122017
 				expt = 0.5
 				state = 0
@@ -42219,9 +42290,9 @@ GAME
 				sym = 19
 				srfN = srfAttach, 12
 				mass = 0.0299999993
-				shielded = False
-				temp = 189.74682551847491
-				tempExt = 184.9667785053847
+				shielded = True
+				temp = 224.86808412524613
+				tempExt = 224.86443596429012
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42298,9 +42369,9 @@ GAME
 				sym = 19
 				srfN = srfAttach, 12
 				mass = 0.0299999993
-				shielded = False
-				temp = 189.74682551846695
-				tempExt = 184.96677850538214
+				shielded = True
+				temp = 224.86808412524613
+				tempExt = 224.86443596429012
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42377,9 +42448,9 @@ GAME
 				sym = 19
 				srfN = srfAttach, 12
 				mass = 0.0299999993
-				shielded = False
-				temp = 189.74798555949371
-				tempExt = 184.96714684403258
+				shielded = True
+				temp = 224.86808412524613
+				tempExt = 224.86443596429012
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42456,9 +42527,9 @@ GAME
 				sym = 19
 				srfN = srfAttach, 12
 				mass = 0.0299999993
-				shielded = False
-				temp = 189.74753463497717
-				tempExt = 184.96700366535498
+				shielded = True
+				temp = 224.86808412524613
+				tempExt = 224.86443596429012
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42536,8 +42607,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.0299999993
 				shielded = False
-				temp = 189.74682551854443
-				tempExt = 184.96677850540678
+				temp = 223.57228539752819
+				tempExt = 222.99506879606321
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42615,8 +42686,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14024904293109
-				tempExt = 185.65831857442419
+				temp = 225.30265322146144
+				tempExt = 227.1816016591109
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42700,8 +42771,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14024904293109
-				tempExt = 185.65831857442419
+				temp = 225.30256559757268
+				tempExt = 227.18157286365613
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42785,8 +42856,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14025444668405
-				tempExt = 185.6583220927088
+				temp = 225.30271156033101
+				tempExt = 227.18162083075777
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42870,8 +42941,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14024904293109
-				tempExt = 185.65831857442419
+				temp = 225.30284162580404
+				tempExt = 227.18166357360411
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -42955,8 +43026,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14024904293109
-				tempExt = 185.65831857442419
+				temp = 225.30270310605758
+				tempExt = 227.18161805246697
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43040,8 +43111,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 189.14024904293109
-				tempExt = 185.65831857442419
+				temp = 225.30256559757268
+				tempExt = 227.18157286365613
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43122,8 +43193,8 @@ GAME
 				attN = bottom, 63
 				mass = 2.5
 				shielded = False
-				temp = 189.7260518932307
-				tempExt = 185.63379847870203
+				temp = 253.4562619077517
+				tempExt = 257.06020057723765
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43279,8 +43350,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0250000004
 				shielded = False
-				temp = 189.32540323239957
-				tempExt = 184.59601708363428
+				temp = 292.14952975858591
+				tempExt = 290.91819436924243
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43391,8 +43462,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.55784696556918
-				tempExt = 182.53836513426461
+				temp = 312.34805029761878
+				tempExt = 322.791710483901
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43439,8 +43510,8 @@ GAME
 				attN = bottom, 28
 				mass = 0.25
 				shielded = False
-				temp = 189.92433808369699
-				tempExt = 180.07161557178929
+				temp = 328.5897005885696
+				tempExt = 342.03833693419472
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43462,7 +43533,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -43498,8 +43569,8 @@ GAME
 				attN = bottom, 32
 				mass = 0.25
 				shielded = False
-				temp = 189.97258945987812
-				tempExt = 181.087364796092
+				temp = 356.60692304833344
+				tempExt = 369.79504933581245
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43521,7 +43592,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -43556,8 +43627,8 @@ GAME
 				attN = bottom01, 30
 				mass = 0.075000003
 				shielded = False
-				temp = 189.50264999549194
-				tempExt = 176.68925902232615
+				temp = 353.35947622778383
+				tempExt = 361.47842783513863
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43619,8 +43690,8 @@ GAME
 				attN = bottom, -1
 				mass = 3
 				shielded = False
-				temp = 189.97131757277427
-				tempExt = 187.1731385483489
+				temp = 536.10256672330388
+				tempExt = 484.93957253207623
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -43804,8 +43875,8 @@ GAME
 				attN = bottom01, 29
 				mass = 0.075000003
 				shielded = False
-				temp = 189.47153681742225
-				tempExt = 176.24136481535749
+				temp = 324.7129390534659
+				tempExt = 333.93842032223398
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43865,8 +43936,8 @@ GAME
 				srfN = srfAttach, 28
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.57862615096252
-				tempExt = 181.79461762082843
+				temp = 308.20941166252101
+				tempExt = 318.85881912627895
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -43914,7 +43985,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-2.59280114E-07, -0.120109618, -0.787822902)
+					suspensionPos = (6.25849452E-08, -0.120109141, -0.787822902)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -44022,8 +44093,8 @@ GAME
 				srfN = srfAttach, 28
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.57764938125146
-				tempExt = 181.78739698692343
+				temp = 308.2110043516517
+				tempExt = 318.87028513929386
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44071,7 +44142,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (4.67895688E-07, -0.12010926, -0.787823319)
+					suspensionPos = (-3.27826051E-08, -0.1201092, -0.787822843)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -44179,8 +44250,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0250000004
 				shielded = False
-				temp = 189.32572582099093
-				tempExt = 184.59686152648709
+				temp = 292.20960948322153
+				tempExt = 291.02732103966446
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44291,8 +44362,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.56040785922428
-				tempExt = 182.53999786314026
+				temp = 312.43789085458343
+				tempExt = 323.04898829127006
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44339,8 +44410,8 @@ GAME
 				attN = bottom, 37
 				mass = 0.25
 				shielded = False
-				temp = 189.92688514198716
-				tempExt = 180.07303717383704
+				temp = 328.6731840093322
+				tempExt = 342.42618574835797
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44362,7 +44433,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -44398,8 +44469,8 @@ GAME
 				attN = bottom, 41
 				mass = 0.25
 				shielded = False
-				temp = 189.97544979742349
-				tempExt = 181.08873654209032
+				temp = 356.71439442081396
+				tempExt = 370.43317594912099
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44421,7 +44492,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -44456,8 +44527,8 @@ GAME
 				attN = bottom01, 39
 				mass = 0.075000003
 				shielded = False
-				temp = 189.50581941352388
-				tempExt = 176.69041241075277
+				temp = 353.52909452926434
+				tempExt = 362.36869285799457
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44519,8 +44590,8 @@ GAME
 				attN = bottom, -1
 				mass = 3
 				shielded = False
-				temp = 189.97727132224452
-				tempExt = 187.17469361854177
+				temp = 536.27290223816772
+				tempExt = 485.61442057801258
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -44704,8 +44775,8 @@ GAME
 				attN = bottom01, 38
 				mass = 0.075000003
 				shielded = False
-				temp = 189.47412620801487
-				tempExt = 176.24243264919519
+				temp = 324.8132399562013
+				tempExt = 334.32249375130425
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44765,8 +44836,8 @@ GAME
 				srfN = srfAttach, 37
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.58065344565674
-				tempExt = 181.78912452687533
+				temp = 308.29972249084182
+				tempExt = 319.10861074937259
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44814,7 +44885,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (9.8347563E-08, -0.120110095, -0.787823915)
+					suspensionPos = (2.53319826E-07, -0.12010926, -0.787822843)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -44922,8 +44993,8 @@ GAME
 				srfN = srfAttach, 37
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.58187501701988
-				tempExt = 181.79707806992815
+				temp = 308.29736899257324
+				tempExt = 319.08152233301325
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -44971,7 +45042,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (1.10268495E-07, -0.12010932, -0.787823617)
+					suspensionPos = (-1.28149907E-07, -0.12010932, -0.787822783)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -45079,8 +45150,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0250000004
 				shielded = False
-				temp = 189.32548287547758
-				tempExt = 184.59449918621348
+				temp = 292.24639623599137
+				tempExt = 291.10645879244174
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45191,8 +45262,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.55938728133623
-				tempExt = 182.53544370839813
+				temp = 312.49210536782914
+				tempExt = 323.13241384796828
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45239,8 +45310,8 @@ GAME
 				attN = bottom, 46
 				mass = 0.25
 				shielded = False
-				temp = 189.92689352425253
-				tempExt = 180.07357453846933
+				temp = 328.72786947119141
+				tempExt = 342.48000256561176
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45262,7 +45333,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -45298,8 +45369,8 @@ GAME
 				attN = bottom, 50
 				mass = 0.25
 				shielded = False
-				temp = 189.97613646104753
-				tempExt = 181.09015882902517
+				temp = 356.77175532375969
+				tempExt = 370.47000607537984
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45321,7 +45392,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 397.0557228440187
+					amount = 237.08902162659402
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -45356,8 +45427,8 @@ GAME
 				attN = bottom01, 48
 				mass = 0.075000003
 				shielded = False
-				temp = 189.50619506991737
-				tempExt = 176.6940328709918
+				temp = 353.59490714301921
+				tempExt = 362.50711058683476
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45419,8 +45490,8 @@ GAME
 				attN = bottom, -1
 				mass = 3
 				shielded = False
-				temp = 189.98017172381171
-				tempExt = 187.18132091822289
+				temp = 536.33573277265452
+				tempExt = 485.68192887680016
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -45604,8 +45675,8 @@ GAME
 				attN = bottom01, 47
 				mass = 0.075000003
 				shielded = False
-				temp = 189.47394880367295
-				tempExt = 176.24241869991792
+				temp = 324.86652157218896
+				tempExt = 334.37099283286034
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45665,8 +45736,8 @@ GAME
 				srfN = srfAttach, 46
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.57959479664638
-				tempExt = 181.79005552737772
+				temp = 308.35298072385683
+				tempExt = 319.16475244715241
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45714,7 +45785,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (2.89082095E-07, -0.1201092, -0.787823558)
+					suspensionPos = (4.02331253E-08, -0.120109081, -0.787822962)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -45822,8 +45893,8 @@ GAME
 				srfN = srfAttach, 46
 				mass = 0.0500000007
 				shielded = False
-				temp = 189.57954256564869
-				tempExt = 181.78630066814583
+				temp = 308.37185264437721
+				tempExt = 319.39484549897838
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -45871,7 +45942,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-9.1493024E-07, -0.120109022, -0.787823319)
+					suspensionPos = (-1.16229145E-07, -0.120109499, -0.7878232)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -45979,8 +46050,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766497192
-				tempExt = 186.18613113092454
+				temp = 251.49747689599542
+				tempExt = 254.57750544873039
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46099,8 +46170,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766497192
-				tempExt = 186.18613113092454
+				temp = 251.4974768959425
+				tempExt = 254.57750544871209
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46219,8 +46290,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766521933
-				tempExt = 186.18613113100804
+				temp = 251.49747689711086
+				tempExt = 254.57750544911485
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46339,8 +46410,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766497192
-				tempExt = 186.18613113092454
+				temp = 251.49747689598291
+				tempExt = 254.57750544872601
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46459,8 +46530,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766497192
-				tempExt = 186.18613113092454
+				temp = 251.49747689595841
+				tempExt = 254.57750544871755
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46579,8 +46650,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.100000001
 				shielded = False
-				temp = 189.66181766497192
-				tempExt = 186.18613113092454
+				temp = 251.51616764498382
+				tempExt = 254.91502378154598
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46699,8 +46770,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0149999997
 				shielded = False
-				temp = 189.23718860940275
-				tempExt = 186.10477968270706
+				temp = 252.68463582285682
+				tempExt = 255.25649746827241
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46777,8 +46848,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0149999997
 				shielded = False
-				temp = 189.23759058311879
-				tempExt = 186.11199306865944
+				temp = 252.67954697278708
+				tempExt = 255.21010952895082
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46855,8 +46926,8 @@ GAME
 				srfN = srfAttach, 26
 				mass = 0.0149999997
 				shielded = False
-				temp = 189.23723474466428
-				tempExt = 186.10619699649624
+				temp = 252.68750256385772
+				tempExt = 255.28105963222117
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -46934,8 +47005,8 @@ GAME
 				attN = top, 26
 				mass = 0.5
 				shielded = False
-				temp = 189.91596905256679
-				tempExt = 176.2859345940839
+				temp = 223.56794311833167
+				tempExt = 219.18431527466191
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -47100,8 +47171,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 189.68365097428247
-				tempExt = 186.24101022901473
+				temp = 251.14179263065219
+				tempExt = 254.71549467203414
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -47204,7 +47275,7 @@ GAME
 				Stage = True, 6221946.9143024
 				Gear = True, 0
 				Light = False, 0
-				RCS = False, 0
+				RCS = True, 6234237.62664911
 				SAS = True, 6192878.22688789
 				Brakes = False, 0
 				Abort = False, 0
@@ -47232,9 +47303,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = -1
-				yaw = -1
-				roll = -0.000138021511
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -48597,35 +48668,6 @@ GAME
 				0 = Suborbit,Mun
 			}
 		}
-		KERBAL
-		{
-			name = Delrienne Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.233158454
-			dumb = 0.184045285
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
 	}
 	MESSAGESYSTEM
 	{
@@ -48705,7 +48747,7 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
 			color = 2
 			icon = 3
 			read = False
@@ -48713,7 +48755,7 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
 			color = 2
 			icon = 3
 			read = False
@@ -48721,7 +48763,31 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
 			color = 2
 			icon = 3
 			read = False
@@ -48730,22 +48796,6 @@ GAME
 		{
 			title = Objectifs du contrat remplis
 			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
 			color = 2
 			icon = 3
 			read = False
@@ -48761,199 +48811,7 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
-			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nSurvoler La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,125   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nSurvoler La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,125   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
 			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Objectifs du contrat remplis
-			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
 			color = 2
 			icon = 3
 			read = False
