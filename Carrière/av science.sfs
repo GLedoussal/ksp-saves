@@ -192,7 +192,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 9014293.6747931205
+		update = 9014289.6547932103
 		version = 1.4.2
 		WEIGHTS
 		{
@@ -5514,7 +5514,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 17.1654053
+		sci = 1027.16541
 		Tech
 		{
 			id = start
@@ -5820,40 +5820,6 @@ GAME
 			part = solarPanels1
 			part = solarPanels4
 			part = solarPanels2
-		}
-		Tech
-		{
-			id = specializedConstruction
-			state = Available
-			cost = 160
-			part = stackBiCoupler
-			part = stackPoint1
-			part = dockingPort2
-			part = stackSeparator
-			part = trussAdapter
-			part = Separator.2
-			part = fairingSize2
-			part = pointyNoseConeB
-		}
-		Tech
-		{
-			id = veryHeavyRocketry
-			state = Available
-			cost = 550
-			part = Size3EngineCluster
-			part = Size3AdvancedEngine
-			part = SSME
-		}
-		Tech
-		{
-			id = largeVolumeContainment
-			state = Available
-			cost = 300
-			part = Size3to2Adapter
-			part = size3Decoupler
-			part = Size3SmallTank
-			part = Size3MediumTank
-			part = Decoupler.3
 		}
 		Science
 		{
@@ -7151,7 +7117,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.2
-		UT = 9014299.4747929908
+		UT = 9014291.5747931674
 		activeVessel = 0
 		mapViewFiltering = 7166
 		commNetUIModeTracking = Network
@@ -36778,13 +36744,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 100619.41627017898
+				SMA = 100619.41627017927
 				ECC = 0.99999999999999989
-				INC = 17.948271821283448
+				INC = 17.948271821283431
 				LPE = 270
-				LAN = 108.84166964938345
+				LAN = 108.83115335968563
 				MNA = 3.1415926207170166
-				EPH = 9014293.6347931214
+				EPH = 9014289.5747932121
 				REF = 2
 			}
 			PART
@@ -36950,13 +36916,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300339.16597736633
-				ECC = 0.99999999999999989
+				SMA = NaN
+				ECC = 1
 				INC = 0.16296632713581891
 				LPE = 270
-				LAN = 25.009029063891262
-				MNA = 3.1415926207170166
-				EPH = 9014293.6347931214
+				LAN = 24.941203590366399
+				MNA = 0
+				EPH = 9014289.5747932121
 				REF = 1
 			}
 			PART
@@ -37099,13 +37065,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 0.1634817568332787
+				SMA = 300338.68266039272
+				ECC = 0.99999999999999989
+				INC = 0.16348175683104929
 				LPE = 270
-				LAN = 25.007305831606743
-				MNA = 0
-				EPH = 9014293.6347931214
+				LAN = 24.939480358081937
+				MNA = 3.1415926207170166
+				EPH = 9014289.5747932121
 				REF = 1
 			}
 			PART
@@ -37248,13 +37214,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 0.16282659483929324
+				SMA = 300339.23973304848
+				ECC = 0.99999999999999989
+				INC = 0.16282659483705489
 				LPE = 270
-				LAN = 25.00928257756118
-				MNA = 0
-				EPH = 9014293.6347931214
+				LAN = 24.941457104036317
+				MNA = -3.1415926207170166
+				EPH = 9014289.5747932121
 				REF = 1
 			}
 			PART
@@ -38209,13 +38175,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 100481.21211363042
-				ECC = 0.99999999999999989
-				INC = 43.39589029992537
+				SMA = 0
+				ECC = 1
+				INC = 43.395890299925533
 				LPE = 90
-				LAN = 93.125468149041808
-				MNA = 3.1415926207170166
-				EPH = 9014293.6347931214
+				LAN = 93.114951859343705
+				MNA = 0
+				EPH = 9014289.5747932121
 				REF = 2
 			}
 			PART
@@ -40005,13 +39971,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 37.001136136201978
+				INC = 37.001136136202419
 				LPE = 270
-				LAN = 120.27338553840042
+				LAN = 120.23720732138929
 				MNA = 0
-				EPH = 9014293.6347931214
+				EPH = 9014289.5747932121
 				REF = 3
 			}
 			PART
@@ -43385,6 +43351,78 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
 			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,156   </color>
 			color = 2
 			icon = 3
@@ -43401,6 +43439,134 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
+			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
 			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
 			color = 2
 			icon = 3
@@ -43409,7 +43575,159 @@ GAME
 		MESSAGE
 		{
 			title = Objectifs du contrat remplis
+			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
 			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nSurvoler La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 10,156   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nSurvoler La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
 			color = 2
 			icon = 3
 			read = False
@@ -43426,6 +43744,150 @@ GAME
 		{
 			title = Objectifs du contrat remplis
 			message = <b>Transportez quatre touristes sans encombre à leurs destinations.</b>~n~nVol suborbital au-dessus de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nConserver la stabilité pendant dix secondes : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite équatoriale autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite polaire autour de Minmus.</b>~n~nPosséder un(e) baie de matériel sur le(la) satellite : Réussite !
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Positionnez un satellite sur une orbite désignée autour de La Mune.</b>~n~nPosséder un(e) thermomètre sur le(la) satellite : Réussite !
 			color = 2
 			icon = 3
 			read = False
