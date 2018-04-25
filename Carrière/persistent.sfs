@@ -11,12 +11,12 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 39
+	launchID = 42
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
-	modded = False
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
-	versionFull = 1.4.2.2110 (WindowsPlayer x64)
+	modded = True
+	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP  - 
+	versionFull = 1.4.2.2110 (OSXPlayer)
 	versionCreated = 1.4.1.2089 (OSXPlayer)
 	PARAMETERS
 	{
@@ -191,28 +191,33 @@ GAME
 				PlanetId = 3
 				BiomeName = Great Flats
 			}
+			BIOME_LOCK_DATA
+			{
+				PlanetId = 2
+				BiomeName = Southwest Crater
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 11003479.54887869
+		update = -1000
 		version = 1.4.2
 		WEIGHTS
 		{
-			TourismContract = 86
-			SurveyContract = 22
-			StationContract = 30
-			SentinelContract = 30
-			SatelliteContract = 81
-			ISRUContract = 27
+			TourismContract = 88
+			SurveyContract = 20
+			StationContract = 29
+			SentinelContract = 28
+			SatelliteContract = 79
+			ISRUContract = 23
 			ExplorationContract = 30
 			BaseContract = 30
 			ARMContract = 30
 			RecoverAsset = 10
-			PlantFlag = 51
-			PartTest = 41
+			PlantFlag = 50
+			PartTest = 39
 			GrandTour = 30
 			CollectScience = 25
 			Eeloo = 30
@@ -228,97 +233,13 @@ GAME
 			Duna = 26
 			Eve = 30
 			Moho = 30
-			Minmus = 57
-			Mun = 82
+			Minmus = 70
+			Mun = 78
 			Kerbin = 73
 			Sun = 27
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = b09e67f8-55d8-4634-ae0b-67766062e41c
-				type = PlantFlag
-				prestige = 0
-				seed = 1154667119
-				state = Offered
-				viewed = Seen
-				agent = Zaltonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,115020000,58074.9994516373,153772.491564751,60978.7466549874,0,12.57269,6.666667,11037972.0680389,0,0,0
-				body = 3
-				PARAM
-				{
-					name = PlantFlag
-					state = Incomplete
-					values = 0,0,0,0,0
-					body = 3
-				}
-			}
-			CONTRACT
-			{
-				guid = a3288c4c-0493-41c7-905f-91e44848001f
-				type = SatelliteContract
-				prestige = 0
-				seed = 1154667118
-				state = Offered
-				viewed = Seen
-				agent = Zaltonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,6463.99993896484,17392.1990459442,6787.19962768555,0,1.796098,0.952381,11102772.0680389,0,0,0
-				targetBody = 1
-				deviation = 7
-				orbitType = 6
-				placementMode = 1
-				PARAM
-				{
-					name = SpecificVesselParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					targetVesselID = 9d750fab86df42adab9c2c99c0119bc7
-					targetVesselPartCount = 18
-					targetVesselName = Satellite2
-					targetVesselSituation = ORBITING
-					partIDs = 1933323144|677462700|2978780146|799075341|1317311606|1099545027|1664568349|3762628440|1253529739|1270817697|4179042738|2598045241|830103905|3705713215|2980958772|561120849|1135229699|1323443316
-				}
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = sonde
-					mannedStatus = 1
-					requireNew = False
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = possède une antenne|peut produire de l'électricité
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 7
-					orbitType = 6
-					inclination = 27.196581035206858
-					eccentricity = 0.088957383299788889
-					sma = 29742060.482455458
-					lan = 196.18201391309915
-					argumentOfPeriapsis = 343.05825999010591
-					meanAnomalyAtEpoch = -3.131532375637387
-					epoch = 4789759.1427015588
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
 			CONTRACT
 			{
 				guid = 279d7faf-1015-49be-84e4-4c3df074bb6c
@@ -381,6 +302,58 @@ GAME
 					name = StabilityParameter
 					state = Incomplete
 					disableOnStateChange = False
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = b13a8438-f5cf-4f9a-8fc2-6aea2a099997
+				type = SatelliteContract
+				prestige = 0
+				seed = 2126630557
+				state = Offered
+				viewed = Seen
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,32000,86099.9960899353,33599.9984741211,0,11.42857,6,41794115.9968628,0,0,0
+				targetBody = 1
+				deviation = 7
+				orbitType = 2
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = sonde
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = possède une antenne|peut produire de l'électricité
+					launchID = 0
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 7
+					orbitType = 2
+					inclination = 90
+					eccentricity = 0.044680872397146409
+					sma = 856146.26306662604
+					lan = 155.2859644383592
+					argumentOfPeriapsis = 68.710899385023154
+					meanAnomalyAtEpoch = 2.7453423588844053
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
@@ -453,103 +426,159 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 1e2d0247-81e2-442e-a4bf-2c623cf2353c
-				type = SurveyContract
+				guid = 18640ed8-55db-4fd6-bc34-d20bab225959
+				type = TourismContract
 				prestige = 0
-				seed = 1154667117
+				seed = 1623725783
 				state = Offered
 				viewed = Seen
-				agent = Experimental Engineering Group
+				agent = WinterOwl Aircraft Emporium
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64158.4160327911,45552475.3832817,30299.9997138977,56206.496916771,31499.9985694885,0,8.571429,9,11058930.4840717,0,0,0
-				targetBody = 1
-				centerLatitude = -13.234670868062738
-				centerLongitude = 79.726426796860267
-				dataName = de température
-				anomalyName = changements
-				reportName = mesures
-				locationName = Kerbin près d’Odyssée de Kraken
-				focusedSurvey = False
-				targetBand = GROUND
-				contextual = False
+				values = 63219.5137023926,44885854.7286987,0,0,0,0,20.18724,9.708738,41727725.4905635,0,0,0
+				preposition = pile sur Kerbin
+				homeDestinations = True
+				isGeeAdventure = False
+				tourists = Matbance Kerman|Victor Kerman
 				PARAM
 				{
-					name = SurveyWaypointParameter
+					name = KerbalTourParameter
 					state = Incomplete
-					values = 8800,0,3,3,0
-					targetBody = 1
-					actionDescription = Mesurer la température
-					experiment = temperatureScan
-					flightThreshold = 18200
-					band = 1
-					clusterState = FULL
-					verified = True
-					contextual = False
-					wpSeed = 2048269108
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = -13.257844114998546
-					wpLongitude = 79.739382624852027
-					wpLandlocked = True
-					wpNavigationId = 8d499d1c-5e88-4a4d-b327-693607682957
+					allowPartialFailure = True
+					values = 19500,0,0,0,0
+					kerbalName = Matbance Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Matbance Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Matbance Kerman
+					}
 				}
 				PARAM
 				{
-					name = SurveyWaypointParameter
+					name = KerbalTourParameter
 					state = Incomplete
-					values = 8800,0,3,3,0
-					targetBody = 1
-					actionDescription = Mesurer la température
-					experiment = temperatureScan
-					flightThreshold = 18400
-					band = 1
-					clusterState = FULL
-					verified = True
-					contextual = False
-					wpSeed = 2048269108
-					wpIndex = 1
-					wpTexture = thermometer
-					wpLatitude = -13.247634224498842
-					wpLongitude = 79.769651306450342
-					wpLandlocked = True
-					wpNavigationId = 3bc2984e-5a30-4182-9c13-ba956e76e944
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 8800,0,3,3,0
-					targetBody = 1
-					actionDescription = Mesurer la température
-					experiment = temperatureScan
-					flightThreshold = 19200
-					band = 1
-					clusterState = FULL
-					verified = True
-					contextual = False
-					wpSeed = 2048269108
-					wpIndex = 2
-					wpTexture = thermometer
-					wpLatitude = -13.209996367173664
-					wpLongitude = 79.875225503844206
-					wpLandlocked = True
-					wpNavigationId = ec80ead3-af9e-464e-8598-20e8b3865fe7
+					allowPartialFailure = True
+					values = 19500,0,0,0,0
+					kerbalName = Victor Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Victor Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 3250,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Victor Kerman
+					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 7f87f771-60e5-4dd0-bb31-138e1e168073
+				guid = b5e51ffb-d50d-4ed2-87c6-b924b5e112b3
+				type = TourismContract
+				prestige = 0
+				seed = 490832664
+				state = Offered
+				viewed = Seen
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,92016000,0,0,0,0,20,10,41687659.5410404,0,0,0
+				preposition = autour de La Mune
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Marine Kerman|Sidroch Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 39000,0,0,0,0
+					kerbalName = Marine Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 6500,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Marine Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 6500,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Marine Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 39000,0,0,0,0
+					kerbalName = Sidroch Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 6500,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Sidroch Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 6500,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Sidroch Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 1843ae2f-e923-4434-b7c6-0ffc8f826d2a
 				type = ExplorationContract
 				prestige = 1
-				seed = 570989184
+				seed = 1623725784
 				state = Offered
 				viewed = Seen
 				agent = Kerbin World-Firsts Record-Keeping Society
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 108000,0,44800,83200,44800,8,15,0,11111475.2888788,0,0,0
+				values = 129600,0,44800,83200,44800,8,15,0,41794105.9768611,0,0,0
 				targetBody = 2
 				bodyRatio = 0.631578922
 				PARAM
@@ -637,55 +666,307 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 11d72144-3764-4e35-aa33-38b16622ba58
-				type = ISRUContract
+				guid = 4b85ee24-c49b-40f8-ad64-78bf9b4a0bd9
+				type = PartTest
 				prestige = 1
-				seed = 1656266599
+				seed = 1623725787
+				state = Offered
+				viewed = Seen
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,22500,56250,22500,8,15,11,41686105.9768611,0,0,0
+				part = radialEngineMini
+				haul = False
+				dest = 1
+				sit = ORBITING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialEngineMini
+					body = Kerbin
+					situation = ORBITING
+					uniqueID = 0.011652641935112253
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = Pour réaliser ce test, activez la pièce depuis la file des séquences lorsque toutes les conditions de test seront remplies.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ORBITING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 210000
+						maxAlt = 220000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 5300f467-e409-48b0-9107-248d9ce4bd27
+				type = PartTest
+				prestige = 1
+				seed = 1623725785
+				state = Offered
+				viewed = Seen
+				agent = Goliath National Products
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,27000,67500,27000,5,9,6,41707705.9768611,0,0,0
+				part = GearLarge
+				haul = True
+				dest = 2
+				sit = ORBITING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = GearLarge
+					body = Mun
+					situation = ORBITING
+					uniqueID = 0.10908671101047039
+					haul = True
+					repeatability = ONCEPERPART
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 2
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = ORBITING
+					title = 
+				}
+			}
+			CONTRACT
+			{
+				guid = 302b4fa5-1283-4b9a-8277-d7c1a7fecadf
+				type = TourismContract
+				prestige = 1
+				seed = 1623725786
+				state = Offered
+				viewed = Read
+				agent = Kerbodyne
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,115020000,0,0,0,0,25,12,41729305.9768611,0,0,0
+				preposition = pile sur Kerbin
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Gauguerrand Kerman|Rombrie Kerman|Calface Kerman|Sabine Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 91406,0,0,0,0
+					kerbalName = Gauguerrand Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Gauguerrand Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Gauguerrand Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Gauguerrand Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 60938,0,0,0,0
+					kerbalName = Rombrie Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Rombrie Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Rombrie Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 60938,0,0,0,0
+					kerbalName = Calface Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Calface Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 10156,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Calface Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 73125,0,0,0,0
+					kerbalName = Sabine Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 8125,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Sabine Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 8125,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Sabine Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 8125,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Sabine Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 5679a45a-4b0e-4dde-8188-75fd4c8abad6
+				type = StationContract
+				prestige = 2
+				seed = 1623725792
 				state = Offered
 				viewed = Seen
 				agent = STEADLER Engineering Corps
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,161028000,188722.549244583,529030.992489249,211746.704589486,0,61.2,33.6,11025053.9488793,0,0,0
-				targetBody = 3
-				gatherGoal = 1000
-				targetResource = Ore
-				resourceTitle = minerai
-				isDelivering = True
-				deliveryBody = 1
-				deliverySituation = LANDED
+				values = 64800,257644800,278679.624938965,831249.051529758,330095.993156433,33,39.58782,23.4,41729305.9768611,0,0,0
+				targetBody = 0
+				capacity = 11
+				contextual = False
 				PARAM
 				{
-					name = ResourceExtractionParameter
+					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetBody = 3
-					totalHarvested = 0
-					goalHarvested = 1000
-					resourceName = Ore
-					resourceTitle = minerai
-					notifyLevel = 0.25
-					modules = ModuleResourceHarvester
+					typeString = station
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = possède une antenne|possède un port d'amarrage|peut produire de l'électricité
+					launchID = 0
+				}
+				PARAM
+				{
+					name = CrewCapacityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetCapacity = 11
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = laboratoire de recherche
+					vesselDescription = station
+					partNames = Large_Crewed_Lab
+					moduleNames = ModuleScienceLab
 				}
 				PARAM
 				{
 					name = ResourcePossessionParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					goalResource = 1000
-					resourceName = Minerai
-					resourceTitle = minerai
-					vesselName = navette(s)
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetSituation = LANDED
-					noun = Minerai
-					finalObjective = False
+					goalResource = 6000
+					resourceName = LiquidFuel
+					resourceTitle = ergol liquide
+					vesselName = station
 				}
 				PARAM
 				{
@@ -694,457 +975,33 @@ GAME
 					values = 0,0,0,0,0
 					holdSeconds = 10
 				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 0
+					targetSituation = ORBITING
+					noun = station
+					finalObjective = False
+				}
 			}
 			CONTRACT
 			{
-				guid = 447df684-5baf-4e11-a104-7ace7d230ed7
-				type = TourismContract
-				prestige = 1
-				seed = 1154667122
+				guid = 9c8d09e7-5f03-4927-b54c-16b783825835
+				type = PartTest
+				prestige = 2
+				seed = 1623725790
 				state = Offered
 				viewed = Seen
 				agent = Sean's Cannery
 				deadlineType = Floating
 				expiryType = Floating
-				values = 81509.4274520874,108509425.295591,0,0,0,0,22.72727,12,11076281.495491,0,0,0
-				preposition = pile sur Kerbin
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Chables Kerman|Gaboire Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Chables Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Chables Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Land
-						kerbalName = Chables Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Chables Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 48750,0,0,0,0
-					kerbalName = Gaboire Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 8125,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Gaboire Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 8125,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Gaboire Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = a18ca990-7071-432d-9f06-c09e900c2d0b
-				type = TourismContract
-				prestige = 1
-				seed = 1154667125
-				state = Offered
-				viewed = Seen
-				agent = Rokea Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 107142.854332924,95089283.22047,0,0,0,0,24.01372,12,11101914.9223719,0,0,0
-				preposition = pile sur Kerbin
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Heceline Kerman|Naulande Kerman|Eremy Kerman|Norca Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Heceline Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Heceline Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Heceline Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Heceline Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Naulande Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Naulande Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Naulande Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Naulande Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Eremy Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Orbit
-						kerbalName = Eremy Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Eremy Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Eremy Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Norca Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Norca Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Norca Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Norca Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 7f55bc78-de07-4cf4-ae08-ab3d7050791c
-				type = TourismContract
-				prestige = 1
-				seed = 1154667124
-				state = Offered
-				viewed = Read
-				agent = Moving Parts Experts Group
-				deadlineType = Floating
-				expiryType = Floating
-				values = 19977.8008699152,106381789.632299,0,0,0,0,21.44846,11.11111,11014749.8689088,0,0,0
-				preposition = pile sur Kerbin
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Sigmelin Kerman|Duland Kerman|Bonnie Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 60938,0,0,0,0
-					kerbalName = Sigmelin Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Sigmelin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Sigmelin Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 91406,0,0,0,0
-					kerbalName = Duland Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 3
-						targetType = Orbit
-						kerbalName = Duland Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Duland Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 10156,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Duland Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 48750,0,0,0,0
-					kerbalName = Bonnie Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 8125,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Bonnie Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 8125,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Bonnie Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 521c417a-5c89-46dd-9d1d-2949e51bc675
-				type = SentinelContract
-				prestige = 2
-				seed = 1656266600
-				state = Offered
-				viewed = Seen
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,344196000,114442,197418.195907116,131608.29727149,8,12.17391,8,11068253.9488793,0,0,0
-				innerBody = 5
-				outerBody = 1
-				asteroidCount = 15
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = Télescope infrarouge SENTINELLE
-					vesselDescription = vaisseau
-					partNames = InfraredTelescope
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 0
-					deviationWindow = 3
-					orbitType = 6
-					inclination = -0.00082192092668265104
-					eccentricity = 0.0055824802257120609
-					sma = 10324688728.372522
-					lan = 0
-					argumentOfPeriapsis = 0
-					meanAnomalyAtEpoch = 3.1386699687990167
-					epoch = 0
-				}
-				PARAM
-				{
-					name = SentinelParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					FocusBody = 1
-					ScanType = ECCENTRICITY
-					TargetSize = E
-					MinimumEccentricity = 0.068591320322226354
-					MinimumInclination = 0
-					TotalDiscoveries = 15
-					RemainingDiscoveries = 15
-				}
-			}
-			CONTRACT
-			{
-				guid = ccf4c144-36d2-411b-a5e2-81d992bc88a3
-				type = ISRUContract
-				prestige = 2
-				seed = 1154667127
-				state = Offered
-				viewed = Seen
-				agent = Moving Parts Experts Group
-				deadlineType = Floating
-				expiryType = Floating
-				values = 57718.0029327217,114743389.830251,100361.523194593,294127.286914734,112054.12862803,0,26.34625,14.28571,11052490.0709716,0,0,0
-				targetBody = 2
-				gatherGoal = 1900
-				targetResource = Ore
-				resourceTitle = minerai
-				isDelivering = False
-				PARAM
-				{
-					name = ResourceExtractionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 2
-					totalHarvested = 0
-					goalHarvested = 1900
-					resourceName = Ore
-					resourceTitle = minerai
-					notifyLevel = 0.25
-					modules = ModuleResourceHarvester
-				}
-			}
-			CONTRACT
-			{
-				guid = 7768af32-f48b-4d6d-baf4-fc7c4057c5a7
-				type = PartTest
-				prestige = 2
-				seed = 1154667126
-				state = Offered
-				viewed = Seen
-				agent = FLOOYD Dynamics Research Labs
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,18403200,81000,232874.995172024,93149.9980688095,14,23.47826,21,11037972.0680389,0,0,0
+				values = 19816.5133953094,16883669.4128037,47088.0014419556,135378.001338959,49679.9989700317,8,13.04348,10,41684322.4902564,0,0,0
 				part = Separator.0
 				haul = False
 				dest = 2
-				sit = LANDED
+				sit = ORBITING
 				exp = True
 				PARAM
 				{
@@ -1153,8 +1010,8 @@ GAME
 					values = 0,0,0,0,0
 					part = Separator.0
 					body = Mun
-					situation = LANDED
-					uniqueID = 0.99978713877489189
+					situation = ORBITING
+					uniqueID = 0.8655015383220751
 					haul = False
 					repeatability = ONCEPERPART
 					notes = Pour réaliser ce test, activez la pièce depuis la file des séquences lorsque toutes les conditions de test seront remplies.
@@ -1173,196 +1030,70 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						sit = LANDED
+						sit = ORBITING
 						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 200000
+						maxAlt = 210000
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 753fefe4-1371-4b9d-a11e-a516130f6a32
+				guid = c4dcd97c-d6bc-4817-8911-78fcda6ccb46
 				type = TourismContract
 				prestige = 2
-				seed = 1154667129
+				seed = 1623725791
 				state = Offered
-				viewed = Read
-				agent = Moving Parts Experts Group
+				viewed = Seen
+				agent = Goliath National Products
 				deadlineType = Floating
 				expiryType = Floating
-				values = 76957.3372436289,102449455.205581,0,0,0,0,23.95114,13.39286,11071729.4052826,0,0,0
+				values = 129600,115020000,0,0,0,0,30,15,41794105.9768611,0,0,0
 				preposition = du système solaire
 				homeDestinations = False
 				isGeeAdventure = False
-				tourists = Roseponte Kerman|Gusdas Kerman|Pierlan Kerman|Alquinne Kerman|Dindebelle Kerman|Laudosse Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 146250,0,0,0,0
-					kerbalName = Roseponte Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 3
-						targetType = Land
-						kerbalName = Roseponte Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Roseponte Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Roseponte Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Roseponte Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 117000,0,0,0,0
-					kerbalName = Gusdas Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Gusdas Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Gusdas Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Gusdas Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Gusdas Kerman
-					}
-				}
+				tourists = Dinune Kerman|Quencelin Kerman|Jocas Kerman|Pierrick Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					state = Incomplete
 					allowPartialFailure = True
 					values = 109688,0,0,0,0
-					kerbalName = Pierlan Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 3
-						targetType = Flyby
-						kerbalName = Pierlan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 3
-						targetType = Orbit
-						kerbalName = Pierlan Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Pierlan Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 117000,0,0,0,0
-					kerbalName = Alquinne Kerman
+					kerbalName = Dinune Kerman
 					kerbalGender = Female
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Alquinne Kerman
+						values = 12188,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Dinune Kerman
 					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Alquinne Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Alquinne Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 9750,0,0,0,0
+						values = 12188,0,0,0,0
 						targetBody = 2
 						targetType = Flyby
-						kerbalName = Alquinne Kerman
+						kerbalName = Dinune Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Dinune Kerman
 					}
 				}
 				PARAM
@@ -1371,34 +1102,25 @@ GAME
 					state = Incomplete
 					allowPartialFailure = True
 					values = 146250,0,0,0,0
-					kerbalName = Dindebelle Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Dindebelle Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 12188,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Dindebelle Kerman
-					}
+					kerbalName = Quencelin Kerman
+					kerbalGender = Male
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
 						values = 12188,0,0,0,0
 						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Quencelin Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
 						targetType = Orbit
-						kerbalName = Dindebelle Kerman
+						kerbalName = Quencelin Kerman
 					}
 					PARAM
 					{
@@ -1406,8 +1128,17 @@ GAME
 						state = Incomplete
 						values = 12188,0,0,0,0
 						targetBody = 3
-						targetType = Land
-						kerbalName = Dindebelle Kerman
+						targetType = Flyby
+						kerbalName = Quencelin Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Quencelin Kerman
 					}
 				}
 				PARAM
@@ -1416,8 +1147,17 @@ GAME
 					state = Incomplete
 					allowPartialFailure = True
 					values = 87750,0,0,0,0
-					kerbalName = Laudosse Kerman
+					kerbalName = Jocas Kerman
 					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Jocas Kerman
+					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -1425,7 +1165,7 @@ GAME
 						values = 9750,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Laudosse Kerman
+						kerbalName = Jocas Kerman
 					}
 					PARAM
 					{
@@ -1434,7 +1174,78 @@ GAME
 						values = 9750,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Laudosse Kerman
+						kerbalName = Jocas Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 109688,0,0,0,0
+					kerbalName = Pierrick Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Pierrick Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Pierrick Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Pierrick Kerman
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 3852208d-75ff-4aaf-846b-7853707280dd
+				type = TourismContract
+				prestige = 2
+				seed = 490832665
+				state = Offered
+				viewed = Read
+				agent = StrutCo
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,115020000,0,0,0,0,26.08696,15,41795659.5410404,0,0,0
+				preposition = du système solaire
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Frandun Kerman|Richacette Kerman|Gervais Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 117000,0,0,0,0
+					kerbalName = Frandun Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Frandun Kerman
 					}
 					PARAM
 					{
@@ -1442,8 +1253,98 @@ GAME
 						state = Incomplete
 						values = 9750,0,0,0,0
 						targetBody = 2
-						targetType = Land
-						kerbalName = Laudosse Kerman
+						targetType = Flyby
+						kerbalName = Frandun Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Frandun Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Frandun Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 109688,0,0,0,0
+					kerbalName = Richacette Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Richacette Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Richacette Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Richacette Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 87750,0,0,0,0
+					kerbalName = Gervais Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Gervais Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Gervais Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 9750,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Gervais Kerman
 					}
 				}
 			}
@@ -5496,6 +5397,370 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 753fefe4-1371-4b9d-a11e-a516130f6a32
+				type = TourismContract
+				prestige = 2
+				seed = 1154667129
+				state = Completed
+				viewed = Read
+				agent = Moving Parts Experts Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 76957.3372436289,102449455.205581,0,0,0,0,23.95114,13.39286,11071729.4052826,11003500.1888782,113452955.394459,0
+				preposition = du système solaire
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Roseponte Kerman|Gusdas Kerman|Pierlan Kerman|Alquinne Kerman|Dindebelle Kerman|Laudosse Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Roseponte Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Roseponte Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Roseponte Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Roseponte Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Roseponte Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Gusdas Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Gusdas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Gusdas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Gusdas Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Gusdas Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Pierlan Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Pierlan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Pierlan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Pierlan Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Alquinne Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Alquinne Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Alquinne Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Alquinne Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Alquinne Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Dindebelle Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Orbit
+						kerbalName = Dindebelle Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Dindebelle Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Dindebelle Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Dindebelle Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Laudosse Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Laudosse Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Laudosse Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Laudosse Kerman
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 8d87bf7d-0cb9-4557-880e-0078cae41a05
+				type = TourismContract
+				prestige = 0
+				seed = -1015492442
+				state = Completed
+				viewed = Read
+				agent = Moving Parts Experts Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 124579.454547772,110564265.911148,0,0,0,0,18.49458,9.615385,25975526.7915362,25940251.1950804,136504517.106228,0
+				preposition = autour de Minmus
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = César Kerman|Joadinand Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = César Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = César Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = César Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Complete
+					disableOnStateChange = False
+					allowPartialFailure = True
+					values = 0,0,0,0,0
+					kerbalName = Joadinand Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Joadinand Kerman
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -5508,7 +5773,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 1347600.8902801182
+		funds = 1874687.2559298184
 	}
 	SCENARIO
 	{
@@ -5886,7 +6151,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 74.8510742
+		sci = 488.866455
 		Tech
 		{
 			id = start
@@ -5898,6 +6163,8 @@ GAME
 			part = GooExperiment
 			part = trussPiece1x
 			part = parachuteSingle
+			part = Engineer7500
+			part = EngineerChip
 		}
 		Tech
 		{
@@ -6251,6 +6518,241 @@ GAME
 			part = adapterLargeSmallTri
 			part = adapterLargeSmallQuad
 			part = adapterLargeSmallBi
+		}
+		Tech
+		{
+			id = aerodynamicSystems
+			state = Available
+			cost = 90
+			part = nacelleBody
+			part = JetEngine
+			part = Mark2Cockpit
+			part = sweptWing2
+			part = structuralWing2
+			part = wingConnector3
+			part = wingConnector
+			part = airplaneTailB
+			part = standardNoseCone
+			part = noseConeAdapter
+			part = CircularIntake
+			part = airScoop
+		}
+		Tech
+		{
+			id = advAerodynamics
+			state = Available
+			cost = 160
+			part = smallHardpoint
+			part = sweptWing1
+			part = structuralWing4
+			part = elevon5
+			part = smallCtrlSrf
+			part = elevon3
+			part = elevon2
+			part = delta.small
+			part = deltaWing
+			part = wingConnector4
+			part = CanardController
+			part = airbrake1
+		}
+		Tech
+		{
+			id = heavyAerodynamics
+			state = Available
+			cost = 300
+			part = mk3CargoBayS
+			part = mk3CargoRamp
+			part = mk3CargoBayM
+			part = mk3FuselageLF.50
+			part = mk3FuselageLF.25
+			part = mk3CrewCabin
+			part = adapterMk3-Size2Slant
+			part = adapterMk3-Size2
+			part = turboFanSize2
+			part = mk3Cockpit.Shuttle
+			part = airlinerTailFin
+			part = airlinerMainWing
+			part = airlinerCtrlSrf
+		}
+		Tech
+		{
+			id = propulsionSystems
+			state = Available
+			cost = 90
+			part = miniFuelTank
+			part = externalTankCapsule
+			part = microEngine
+			part = liquidEngineMini
+		}
+		Tech
+		{
+			id = experimentalAerodynamics
+			state = Available
+			cost = 550
+			part = mk3CargoBayL
+			part = mk3FuselageMONO
+			part = mk3FuselageLF.100
+			part = mk3FuselageLFO.50
+			part = mk3FuselageLFO.25
+			part = mk3FuselageLFO.100
+			part = adapterSize3-Mk3
+			part = adapterEngines
+			part = adapterMk3-Mk2
+			part = wingShuttleStrake
+			part = wingShuttleRudder
+			part = wingShuttleElevon2
+			part = wingShuttleElevon1
+			part = wingShuttleDelta
+		}
+		Tech
+		{
+			id = largeElectrics
+			state = Available
+			cost = 300
+			part = foldingRadLarge
+			part = FuelCell
+			part = batteryBank
+			part = largeSolarPanel
+		}
+		Tech
+		{
+			id = specializedElectrics
+			state = Available
+			cost = 550
+			part = FuelCellArray
+			part = batteryBankLarge
+		}
+		Tech
+		{
+			id = electronics
+			state = Available
+			cost = 300
+			part = RelayAntenna50
+			part = sensorAccelerometer
+			part = HighGainAntenna
+		}
+		Tech
+		{
+			id = advLanding
+			state = Available
+			cost = 160
+			part = GearSmall
+			part = parachuteDrogue
+			part = landingLeg1-2
+			part = HeatShield3
+		}
+		Tech
+		{
+			id = specializedControl
+			state = Available
+			cost = 160
+			part = rcsTankRadialLong
+			part = vernierEngine
+			part = asasmodule1-2
+			part = avionicsNoseCone
+		}
+		Tech
+		{
+			id = actuators
+			state = Available
+			cost = 160
+			part = GrapplingDevice
+		}
+		Tech
+		{
+			id = highPerformanceFuelSystems
+			state = Available
+			cost = 550
+			part = Size3LargeTank
+		}
+		Tech
+		{
+			id = unmannedTech
+			state = Available
+			cost = 300
+			part = probeCoreOcto2
+			part = probeCoreCube
+		}
+		Tech
+		{
+			id = advUnmanned
+			state = Available
+			cost = 550
+			part = HECS2.ProbeCore
+			part = probeStackSmall
+		}
+		Tech
+		{
+			id = automation
+			state = Available
+			cost = 550
+			part = commDish
+			part = RelayAntenna100
+			part = mk2DroneCore
+		}
+		Tech
+		{
+			id = fieldScience
+			state = Available
+			cost = 300
+			part = roverWheel1
+			part = roverBody
+			part = seatExternalCmd
+		}
+		Tech
+		{
+			id = advancedMotors
+			state = Available
+			cost = 550
+			part = roverWheel3
+			part = wheelMed
+		}
+		Tech
+		{
+			id = supersonicFlight
+			state = Available
+			cost = 160
+			part = mk2CargoBayS
+			part = mk2FuselageShortLiquid
+			part = mk2FuselageShortLFO
+			part = mk2SpacePlaneAdapter
+			part = mk2.1m.Bicoupler
+			part = turboJet
+			part = mk2Cockpit.Standard
+			part = structuralWing
+			part = wingStrake
+		}
+		Tech
+		{
+			id = highAltitudeFlight
+			state = Available
+			cost = 300
+			part = mk2DockingPort
+			part = mk2CrewCabin
+			part = mk2CargoBayL
+			part = structuralPylon
+			part = MK1IntakeFuselage
+			part = mk2FuselageShortMono
+			part = mk2Fuselage
+			part = mk2FuselageLongLFO
+			part = mk2.1m.AdapterLong
+			part = adapterSize2-Mk2
+			part = mk2Cockpit.Inline
+			part = ramAirIntake
+			part = IntakeRadialLong
+		}
+		Tech
+		{
+			id = precisionPropulsion
+			state = Available
+			cost = 160
+			part = toroidalFuelTank
+			part = externalTankToroid
+			part = externalTankRound
+			part = sepMotor1
+			part = radialEngineMini
+			part = smallRadialEngine
+			part = omsEngine
 		}
 		Science
 		{
@@ -6727,9 +7229,9 @@ GAME
 			id = recovery@MunSurfaced
 			title = Récupération d'un vaisseau de retour de la surface de La Mune
 			dsc = 1
-			scv = 6.35782897E-07
+			scv = 1.05963814E-07
 			sbv = 30
-			sci = 35.9999771
+			sci = 35.9999962
 			cap = 36
 		}
 		Science
@@ -7127,9 +7629,9 @@ GAME
 			id = recovery@MinmusSurfaced
 			title = Récupération d'un vaisseau de retour de la surface de Minmus
 			dsc = 1
-			scv = 0.027777778
+			scv = 0.00462960126
 			sbv = 37.5
-			sci = 43.75
+			sci = 44.7916679
 			cap = 45
 		}
 		Science
@@ -7257,10 +7759,90 @@ GAME
 			id = surfaceSample@MinmusSrfLandedGreatFlats
 			title = Échantillon de surface de Grandes étendues de Minmus
 			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = crewReport@MunSrfLandedSouthwestCrater
+			title = Rapport d'équipage de Cratère du Sud-Ouest de La Mune
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 20
+			cap = 20
+		}
+		Science
+		{
+			id = gravityScan@MunSrfLandedSouthwestCrater
+			title = Scan gravitationnel de Cratère du Sud-Ouest de La Mune
+			dsc = 3
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 88
+		}
+		Science
+		{
+			id = temperatureScan@MinmusInSpaceLow
+			title = Scan de température dans l'espace près de Minmus
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 32
+		}
+		Science
+		{
+			id = barometerScan@MinmusInSpaceLow
+			title = Scan de pression atmosphérique dans l'espace près de Minmus
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 48
+		}
+		Science
+		{
+			id = gravityScan@MinmusInSpaceLowGreatFlats
+			title = Scan gravitationnel de l'espace juste au-dessus de Grandes étendues de Minmus
+			dsc = 3
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 88
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusInSpaceLow
+			title = Observation de la glairine™ mystérieuse dans l'espace près de Minmus
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 52
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusInSpaceLow
+			title = Étude de matériaux dans l'espace près de Minmus
+			dsc = 1
+			scv = 0.21875
+			sbv = 4
+			sci = 100
+			cap = 128
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedGreatFlats
+			title = Rapport d'AEV de Grandes étendues de Minmus
+			dsc = 1
 			scv = 1
 			sbv = 5
 			sci = 0
-			cap = 200
+			cap = 40
 		}
 	}
 	SCENARIO
@@ -7272,7 +7854,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 652.200256
+		rep = 663.801819
 	}
 	SCENARIO
 	{
@@ -7555,7 +8137,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1037675173
+		lastSeed = 1885470969
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -7613,12 +8195,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 11015778.211935325
+		NextSpawnTime = 41668318.112471953
 	}
 	FLIGHTSTATE
 	{
 		version = 1.4.2
-		UT = 11003484.088878589
+		UT = 41666099.441046946
 		activeVessel = 0
 		mapViewFiltering = 7166
 		commNetUIModeTracking = Network
@@ -37245,13 +37827,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 100619.4162701789
-				ECC = 0.99999999999999989
-				INC = 17.948271821283448
-				LPE = 270
-				LAN = 221.26899940090095
-				MNA = 3.1415926207170166
-				EPH = 11003479.468878692
+				SMA = 0
+				ECC = 1
+				INC = 0.0046151547674616869
+				LPE = 90
+				LAN = 111.63985839096063
+				MNA = 0
+				EPH = 41666093.521045975
 				REF = 2
 			}
 			PART
@@ -37417,13 +37999,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 0.16296632713134601
-				LPE = 270
-				LAN = 135.91399226198007
+				INC = 0.096909912968261749
+				LPE = 90
+				LAN = 110.0760558049609
 				MNA = 0
-				EPH = 11003479.468878692
+				EPH = 41666093.521045975
 				REF = 1
 			}
 			PART
@@ -37566,13 +38148,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300338.68266039266
-				ECC = 0.99999999999999989
-				INC = 0.16348175683104929
-				LPE = 270
-				LAN = 135.91226902969561
-				MNA = 3.1415926207170166
-				EPH = 11003479.468878692
+				SMA = NaN
+				ECC = 1
+				INC = 0.096909912968261749
+				LPE = 90
+				LAN = 110.0760558049609
+				MNA = 0
+				EPH = 41666093.521045975
 				REF = 1
 			}
 			PART
@@ -37715,13 +38297,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300339.23973304848
-				ECC = 0.99999999999999989
-				INC = 0.16282659483929324
-				LPE = 270
-				LAN = 135.91424577564999
-				MNA = 3.1415926207170166
-				EPH = 11003479.468878692
+				SMA = NaN
+				ECC = 1
+				INC = 0.096909912968261749
+				LPE = 90
+				LAN = 110.0760558049609
+				MNA = 0
+				EPH = 41666093.521045975
 				REF = 1
 			}
 			PART
@@ -38676,13 +39258,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 43.395890299925526
+				INC = 0.0046151547674616869
 				LPE = 90
-				LAN = 205.55279790055906
+				LAN = 111.63985839096063
 				MNA = 0
-				EPH = 11003479.468878692
+				EPH = 41666093.521045975
 				REF = 2
 			}
 			PART
@@ -40472,13 +41054,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 31355.354469072106
-				ECC = 0.99999999999999989
-				INC = 37.00113613620055
+				SMA = NaN
+				ECC = 1
+				INC = 2.6950974319045127
 				LPE = 270
-				LAN = 205.69170907318497
-				MNA = 3.1415926207170166
-				EPH = 11003479.468878692
+				LAN = 140.69119341828866
+				MNA = 0
+				EPH = 41666093.521045975
 				REF = 3
 			}
 			PART
@@ -41767,9 +42349,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 0e60bc290b884e3c9ffcb33c8f166f16
-			persistentId = 2664629230
-			name = Ast. FMI-638
+			pid = cf42b32edd5f484e8249069e954edd13
+			persistentId = 3918636590
+			name = Ast. AAQ-706
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -41779,17 +42361,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10342321.865546111
-			lct = 10342321.865546111
+			met = 40166698.202867098
+			lct = 40166698.202867098
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.46610965076186017
-			lon = -103.6514109705397
-			alt = 16323208690.309498
+			lat = -0.31446591983422306
+			lon = -36.809232823730703
+			alt = 14257508463.500423
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.56652385,0.530385971,-0.280538946,0.564835608
+			rot = 0.381056577,-0.774961531,0.00190348667,0.50420922
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -41799,22 +42381,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 15854844972.909685
-				ECC = 0.14318892186503968
-				INC = 0.52254555708290784
-				LPE = 359.50242065839313
-				LAN = 351.82537148330709
-				MNA = 0.072834597310365165
-				EPH = 13726456.118475799
+				SMA = 14186979320.25222
+				ECC = 0.039911951514354158
+				INC = 0.6311189217765707
+				LPE = 337.63057698810184
+				LAN = 105.55483925628471
+				MNA = 0.12035770857398506
+				EPH = 43733809.530992098
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1720968628
-				mid = 1720968628
-				persistentId = 3426823873
+				uid = 1027413036
+				mid = 1027413036
+				persistentId = 3194958287
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -41849,8 +42431,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10342321.865546111
-				lifetime = 1696547.2412109375
+				lastObservedTime = 40166698.202867098
+				lifetime = 1597855.8471679688
 				refTime = 1728000
 				size = 3
 			}
@@ -41869,9 +42451,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 414c99e79f28412e90577892ea31eff6
-			persistentId = 2789304215
-			name = Ast. CDC-561
+			pid = d7b6f10eb5cd4392972acfc573a0986e
+			persistentId = 1205213167
+			name = Ast. AEA-460
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -41881,17 +42463,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10384321.865546111
-			lct = 10384321.865546111
+			met = 40959669.323149994
+			lct = 40959669.323149994
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.6678705175481664
-			lon = -147.66462079842384
-			alt = 13414536019.993517
+			lat = -0.49734128558880858
+			lon = 53.006443147833288
+			alt = 13837798313.642059
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.506766915,-0.124496147,0.601465881,0.604918778
+			rot = -0.644833386,0.343096942,0.576516449,0.366201103
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -41901,22 +42483,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 13801009993.675982
-				ECC = 0.011847083893048222
-				INC = 0.6774294295693124
-				LPE = 140.28084764899546
-				LAN = 126.29993746085665
-				MNA = 0.56650400981102011
-				EPH = 12271889.492499236
+				SMA = 13848745034.02972
+				ECC = 0.018524259309752246
+				INC = 1.1720080624175111
+				LPE = 142.81738603744785
+				LAN = 11.170651003311718
+				MNA = 0.51539356715337814
+				EPH = 46135165.5755914
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1681166103
-				mid = 1681166103
-				persistentId = 1118649160
+				uid = 1257321645
+				mid = 1257321645
+				persistentId = 2995266959
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -41951,8 +42533,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10384321.865546111
-				lifetime = 1020514.5538330078
+				lastObservedTime = 40959669.323149994
+				lifetime = 1387916.8395996094
 				refTime = 1728000
 				size = 4
 			}
@@ -41971,9 +42553,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 1c4ca2c8f8bc45bba5cb536662c23f10
-			persistentId = 3425344459
-			name = Ast. ZHE-439
+			pid = 163ed5ee184345908cf883603f9744f8
+			persistentId = 2672256314
+			name = Ast. ACJ-769
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -41983,17 +42565,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10414321.865546111
-			lct = 10414321.865546111
+			met = 41548028.960399635
+			lct = 41548028.960399635
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.74778175571009553
-			lon = -170.4211548297958
-			alt = 13548730543.047087
+			lat = -1.2240810815255596
+			lon = -61.391796919455039
+			alt = 13618189250.872231
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.55032891,0.459470719,-0.160222307,0.678493619
+			rot = -0.176948592,0.726672351,0.647736192,0.14516966
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -42003,22 +42585,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 13686992857.969139
-				ECC = 0.011886147599209907
-				INC = 0.76727709565199986
-				LPE = 216.7990899925652
-				LAN = 151.12461974005953
-				MNA = -0.63986943882744651
-				EPH = 13052110.793768767
+				SMA = 14647038597.737486
+				ECC = 0.080938809519841504
+				INC = 1.2330385194722868
+				LPE = 330.21529657669839
+				LAN = 85.054192929164515
+				MNA = 0.43976233146512678
+				EPH = 43586278.472118385
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 603051091
-				mid = 603051091
-				persistentId = 4022293152
+				uid = 1012869594
+				mid = 1012869594
+				persistentId = 1432940529
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -42053,8 +42635,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10414321.865546111
-				lifetime = 643856.64367675781
+				lastObservedTime = 41548028.960399635
+				lifetime = 1350806.2591552734
 				refTime = 1728000
 				size = 2
 			}
@@ -42073,9 +42655,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = b56e57f36ca74513ab6e0c4162836c55
-			persistentId = 1946333324
-			name = Ast. EEA-845
+			pid = 307388ef42f54cac9f1ce7bc994cf356
+			persistentId = 420474286
+			name = Ast. HFJ-472
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -42085,17 +42667,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10508321.865546111
-			lct = 10508321.865546111
+			met = 41550628.960399635
+			lct = 41550628.960399635
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.046922912110987321
-			lon = 129.59871422097504
-			alt = 15346727105.623146
+			lat = -0.87458958267005882
+			lon = -48.506526054647033
+			alt = 16766793646.568096
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.00278970948,-0.240248278,-0.646914363,0.723722875
+			rot = 0.783602118,-0.364003479,0.0592518188,0.499958456
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -42105,22 +42687,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 14610809409.980183
-				ECC = 0.071306882517505471
-				INC = 0.5306196935680334
-				LPE = 159.29354480095233
-				LAN = 251.60677350679836
-				MNA = 0.20249369133947315
-				EPH = 15451812.905585174
+				SMA = 16247636828.174749
+				ECC = 0.16200277108195871
+				INC = 0.98729455861570714
+				LPE = 358.30743878013135
+				LAN = 134.66429701931497
+				MNA = 0.12927577271789698
+				EPH = 45082561.186962135
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1224347331
-				mid = 1224347331
-				persistentId = 4125172234
+				uid = 528573509
+				mid = 528573509
+				persistentId = 582231026
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -42155,8 +42737,110 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10508321.865546111
-				lifetime = 1002084.2193603516
+				lastObservedTime = 41550628.960399635
+				lifetime = 792762.03918457031
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = fdc336c0b23944eda27ef4c049e2eb73
+			persistentId = 4002120293
+			name = Ast. SET-875
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 41566428.960399635
+			lct = 41566428.960399635
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.67236152118234094
+			lon = -74.720307866218647
+			alt = 13245389621.44142
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.473772645,-0.511021972,-0.428021669,0.57549423
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14027676807.244513
+				ECC = 0.040025583076224155
+				INC = 0.76714259347654323
+				LPE = 321.62828009643846
+				LAN = 65.186003616239589
+				MNA = 0.67314104906655414
+				EPH = 43164772.765331276
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1674121374
+				mid = 1674121374
+				persistentId = 634037169
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 41566428.960399635
+				lifetime = 1204123.2055664063
 				refTime = 1728000
 				size = 1
 			}
@@ -42175,9 +42859,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 13a1601cf6694fd2a3772fe9c5ece041
-			persistentId = 1595800384
-			name = Ast. UDV-571
+			pid = 83c64b76884f44ecbb7fbdbf12b2d083
+			persistentId = 1533728147
+			name = Ast. CQE-482
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -42187,17 +42871,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10739575.543176549
-			lct = 10739575.543176549
+			met = 41575828.960399635
+			lct = 41575828.960399635
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = 0.60800391409453269
-			lon = -59.419140051513807
-			alt = 15031562092.698662
+			lat = 0.77183313508349216
+			lon = -80.23116392381354
+			alt = 14026871446.696505
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.846576512,0.152529523,-0.0382189527,0.508509934
+			rot = -0.458666712,-0.118482038,-0.226168752,0.85113728
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -42207,22 +42891,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 14545500216.822592
-				ECC = 0.067324274910054285
-				INC = 0.69980827634747189
-				LPE = 202.52599192619124
-				LAN = 189.90714834870749
-				MNA = -0.26319539968885924
-				EPH = 14195171.466028111
+				SMA = 14455212421.790272
+				ECC = 0.060323408552213818
+				INC = 0.77447729048658254
+				LPE = 167.65460620128474
+				LAN = 281.02913386585584
+				MNA = 0.16224357789977878
+				EPH = 43953714.873485573
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 1067951455
-				mid = 1067951455
-				persistentId = 2885446335
+				uid = 1760433372
+				mid = 1760433372
+				persistentId = 3452287868
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -42257,10 +42941,10 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10739575.543176549
-				lifetime = 701491.69006347656
+				lastObservedTime = 41575828.960399635
+				lifetime = 1296659.0148925781
 				refTime = 1728000
-				size = 2
+				size = 3
 			}
 			FLIGHTPLAN
 			{
@@ -42277,9 +42961,9 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 3ad78a543e58465fa8732e55d7e85827
-			persistentId = 1220276980
-			name = Ast. HZW-148
+			pid = e904e71b32d84f029f3dbba642e71a38
+			persistentId = 45059373
+			name = Ast. UEW-508
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
@@ -42289,17 +42973,17 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10982330.041241767
-			lct = 10982330.041241767
+			met = 41580628.960399635
+			lct = 41580628.960399635
 			lastUT = -1
 			distanceTraveled = 0
 			root = 0
-			lat = -0.089350925713942084
-			lon = 104.92593581758015
-			alt = 14563589755.866657
+			lat = 0.13887113002962831
+			lon = -65.518811315784674
+			alt = 15782115797.692097
 			hgt = -1
 			nrm = 0,1,0
-			rot = -0.473442525,0.607322335,-0.170592546,0.614743769
+			rot = -0.573051155,-0.662487447,0.265800983,0.402582437
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -42309,22 +42993,22 @@ GAME
 			PQSMax = 0
 			ORBIT
 			{
-				SMA = 14284125321.2519
-				ECC = 0.04794396058532914
-				INC = 0.10056835452581353
-				LPE = 26.525175740530191
-				LAN = 14.187339153265611
-				MNA = -0.040504656576542716
-				EPH = 14785085.583233954
+				SMA = 14841794231.843992
+				ECC = 0.086069605484733663
+				INC = 2.4975914545393048
+				LPE = 164.99842565783149
+				LAN = 21.819932464666977
+				MNA = 0.17336166187601654
+				EPH = 46490725.29829026
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 850050876
-				mid = 850050876
-				persistentId = 2207503149
+				uid = 1885470969
+				mid = 1885470969
+				persistentId = 778486998
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -42359,110 +43043,8 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 10982330.041241767
-				lifetime = 1031188.2385253906
-				refTime = 1728000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 118429b4f6c648dfadacb25358410fcf
-			persistentId = 1915391648
-			name = Ast. IYJ-274
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 10985530.041241767
-			lct = 10985530.041241767
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.11734394632777287
-			lon = 109.16213464244754
-			alt = 14985265698.889658
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.562987506,0.650002539,-0.373263508,0.348160952
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14417435546.401756
-				ECC = 0.058509518022039429
-				INC = 1.431965915262549
-				LPE = 174.79467934559301
-				LAN = 259.07104329174336
-				MNA = 0.050155504420864722
-				EPH = 15778573.864483954
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1037675173
-				mid = 1037675173
-				persistentId = 2994843793
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 10985530.041241767
-				lifetime = 655243.56079101563
+				lastObservedTime = 41580628.960399635
+				lifetime = 1445006.25
 				refTime = 1728000
 				size = 2
 			}
@@ -42482,6 +43064,12 @@ GAME
 	}
 	LoaderInfo
 	{
+		KerbalEngineer.Unity v1.0.0.0 = True
+		KerbalEngineer v1.1.4.10 = True
+		MiniAVC v1.0.3.2 = True
+		KerbalEngineer = True
+		GravityTurn v1.7.7.42777 = True
+		GravityTurn = True
 	}
 	ROSTER
 	{
@@ -42547,7 +43135,7 @@ GAME
 			}
 			CAREER_LOG
 			{
-				flight = 27
+				flight = 30
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = Recover
@@ -42739,10 +43327,33 @@ GAME
 				26 = Flyby,Kerbin
 				26 = Land,Kerbin
 				26 = Recover
+				27 = Flight,Kerbin
+				27 = Suborbit,Kerbin
+				27 = Orbit,Kerbin
+				27 = Flyby,Mun
+				27 = Escape,Mun
+				27 = Orbit,Mun
+				27 = Suborbit,Mun
+				27 = Land,Mun
+				27 = Flyby,Kerbin
+				27 = Land,Kerbin
+				27 = Recover
+				28 = Flight,Kerbin
+				28 = Suborbit,Kerbin
+				28 = Orbit,Kerbin
+				28 = Flyby,Minmus
+				28 = Escape,Minmus
+				28 = Orbit,Minmus
+				28 = Suborbit,Minmus
+				28 = Land,Minmus
+				28 = Flyby,Kerbin
+				28 = Land,Kerbin
+				28 = Recover
+				29 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 27
+				flight = 30
 			}
 		}
 		KERBAL
@@ -42753,129 +43364,6 @@ GAME
 			trait = Engineer
 			brave = 0.5
 			dumb = 0.800000012
-			badS = False
-			veteran = True
-			tour = False
-			state = Available
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = 0
-			extraXP = 0
-			hero = True
-			EVACHUTE
-			{
-				name = ModuleEvaChute
-				isEnabled = True
-				chuteYawRateAtMaxSpeed = 1
-				chuteMaxSpeedForYawRate = 50
-				chuteYawRateAtMinSpeed = 1
-				chuteMinSpeedForYawRate = 1
-				chuteRollRate = 1
-				chutePitchRate = 1
-				chuteDefaultForwardPitch = 9
-				semiDeployedChuteForwardPitch = 25
-				chutePitchRateDivisorWhenTurning = 1
-				chuteRollRateDivisorWhenPitching = 1
-				chuteYawRateDivisorWhenPitching = 1
-				persistentState = STOWED
-				animTime = 0
-				minAirPressureToOpen = 0.0399999991
-				deployAltitude = 1000
-				spreadAngle = 7
-				automateSafeDeploy = 0
-				stagingEnabled = True
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					DeployAction
-					{
-						actionGroup = None
-					}
-					CutAction
-					{
-						actionGroup = None
-					}
-				}
-				UPGRADESAPPLIED
-				{
-				}
-			}
-			CAREER_LOG
-			{
-				flight = 5
-				0 = Flight,Kerbin
-				0 = Suborbit,Kerbin
-				0 = Orbit,Kerbin
-				0 = Land,Kerbin
-				0 = Recover
-				1 = Flight,Kerbin
-				1 = Suborbit,Kerbin
-				1 = Orbit,Kerbin
-				1 = Flyby,Mun
-				1 = Escape,Mun
-				1 = Orbit,Mun
-				1 = Suborbit,Mun
-				1 = Land,Mun
-				1 = Flyby,Kerbin
-				1 = Land,Kerbin
-				1 = Recover
-				2 = Flight,Kerbin
-				2 = Suborbit,Kerbin
-				2 = Orbit,Kerbin
-				2 = Flyby,Mun
-				2 = Escape,Mun
-				2 = Orbit,Mun
-				2 = Suborbit,Mun
-				2 = Land,Mun
-				2 = PlantFlag,Mun
-				2 = Flyby,Kerbin
-				2 = Land,Kerbin
-				2 = Recover
-				3 = Flight,Kerbin
-				3 = Suborbit,Kerbin
-				3 = Orbit,Kerbin
-				3 = Flyby,Mun
-				3 = Escape,Mun
-				3 = Orbit,Mun
-				3 = Suborbit,Mun
-				3 = Land,Mun
-				3 = PlantFlag,Mun
-				3 = Flyby,Kerbin
-				3 = Land,Kerbin
-				3 = Recover
-				4 = Flight,Kerbin
-				4 = Suborbit,Kerbin
-				4 = Orbit,Kerbin
-				4 = Flyby,Minmus
-				4 = Escape,Minmus
-				4 = Orbit,Minmus
-				4 = Suborbit,Minmus
-				4 = Land,Minmus
-				4 = ExitVessel,Minmus
-				4 = PlantFlag,Minmus
-				4 = BoardVessel,Minmus
-				4 = Flyby,Kerbin
-				4 = Land,Kerbin
-				4 = Recover
-			}
-			FLIGHT_LOG
-			{
-				flight = 5
-			}
-		}
-		KERBAL
-		{
-			name = Bob Kerman
-			gender = Male
-			type = Crew
-			trait = Scientist
-			brave = 0.300000012
-			dumb = 0.100000001
 			badS = False
 			veteran = True
 			tour = False
@@ -42930,7 +43418,142 @@ GAME
 			}
 			CAREER_LOG
 			{
-				flight = 9
+				flight = 7
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
+				0 = Land,Kerbin
+				0 = Recover
+				1 = Flight,Kerbin
+				1 = Suborbit,Kerbin
+				1 = Orbit,Kerbin
+				1 = Flyby,Mun
+				1 = Escape,Mun
+				1 = Orbit,Mun
+				1 = Suborbit,Mun
+				1 = Land,Mun
+				1 = Flyby,Kerbin
+				1 = Land,Kerbin
+				1 = Recover
+				2 = Flight,Kerbin
+				2 = Suborbit,Kerbin
+				2 = Orbit,Kerbin
+				2 = Flyby,Mun
+				2 = Escape,Mun
+				2 = Orbit,Mun
+				2 = Suborbit,Mun
+				2 = Land,Mun
+				2 = PlantFlag,Mun
+				2 = Flyby,Kerbin
+				2 = Land,Kerbin
+				2 = Recover
+				3 = Flight,Kerbin
+				3 = Suborbit,Kerbin
+				3 = Orbit,Kerbin
+				3 = Flyby,Mun
+				3 = Escape,Mun
+				3 = Orbit,Mun
+				3 = Suborbit,Mun
+				3 = Land,Mun
+				3 = PlantFlag,Mun
+				3 = Flyby,Kerbin
+				3 = Land,Kerbin
+				3 = Recover
+				4 = Flight,Kerbin
+				4 = Suborbit,Kerbin
+				4 = Orbit,Kerbin
+				4 = Flyby,Minmus
+				4 = Escape,Minmus
+				4 = Orbit,Minmus
+				4 = Suborbit,Minmus
+				4 = Land,Minmus
+				4 = ExitVessel,Minmus
+				4 = PlantFlag,Minmus
+				4 = BoardVessel,Minmus
+				4 = Flyby,Kerbin
+				4 = Land,Kerbin
+				4 = Recover
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = Orbit,Kerbin
+				5 = Flyby,Minmus
+				5 = Escape,Minmus
+				5 = Orbit,Minmus
+				5 = Suborbit,Minmus
+				5 = Land,Minmus
+				5 = Flyby,Kerbin
+				5 = Land,Kerbin
+				5 = Recover
+				6 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 7
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.300000012
+			dumb = 0.100000001
+			badS = False
+			veteran = True
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = 2
+			extraXP = 0
+			hero = True
+			EVACHUTE
+			{
+				name = ModuleEvaChute
+				isEnabled = True
+				chuteYawRateAtMaxSpeed = 1
+				chuteMaxSpeedForYawRate = 50
+				chuteYawRateAtMinSpeed = 1
+				chuteMinSpeedForYawRate = 1
+				chuteRollRate = 1
+				chutePitchRate = 1
+				chuteDefaultForwardPitch = 9
+				semiDeployedChuteForwardPitch = 25
+				chutePitchRateDivisorWhenTurning = 1
+				chuteRollRateDivisorWhenPitching = 1
+				chuteYawRateDivisorWhenPitching = 1
+				persistentState = STOWED
+				animTime = 0
+				minAirPressureToOpen = 0.0399999991
+				deployAltitude = 1000
+				spreadAngle = 7
+				automateSafeDeploy = 0
+				stagingEnabled = True
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					DeployAction
+					{
+						actionGroup = None
+					}
+					CutAction
+					{
+						actionGroup = None
+					}
+				}
+				UPGRADESAPPLIED
+				{
+				}
+			}
+			CAREER_LOG
+			{
+				flight = 12
 				0 = Flight,Kerbin
 				0 = Suborbit,Kerbin
 				0 = Orbit,Kerbin
@@ -43030,10 +43653,37 @@ GAME
 				8 = Flyby,Kerbin
 				8 = Land,Kerbin
 				8 = Recover
+				9 = Flight,Kerbin
+				9 = Suborbit,Kerbin
+				9 = Orbit,Kerbin
+				9 = Flyby,Mun
+				9 = Escape,Mun
+				9 = Orbit,Mun
+				9 = Suborbit,Mun
+				9 = Land,Mun
+				9 = ExitVessel,Mun
+				9 = BoardVessel,Mun
+				9 = Flyby,Kerbin
+				9 = Land,Kerbin
+				9 = Recover
+				10 = Flight,Kerbin
+				10 = Suborbit,Kerbin
+				10 = Orbit,Kerbin
+				10 = Flyby,Minmus
+				10 = Escape,Minmus
+				10 = Orbit,Minmus
+				10 = Suborbit,Minmus
+				10 = Land,Minmus
+				10 = ExitVessel,Minmus
+				10 = BoardVessel,Minmus
+				10 = Flyby,Kerbin
+				10 = Land,Kerbin
+				10 = Recover
+				11 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 9
+				flight = 12
 			}
 		}
 		KERBAL
@@ -43163,7 +43813,7 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 179311.61531425136
-			idx = 0
+			idx = 1
 			extraXP = 0
 			hero = False
 			EVACHUTE
@@ -43208,7 +43858,7 @@ GAME
 			}
 			CAREER_LOG
 			{
-				flight = 6
+				flight = 8
 				0 = Flight,Kerbin
 				0 = Suborbit,Kerbin
 				0 = Orbit,Kerbin
@@ -43263,10 +43913,32 @@ GAME
 				5 = Flyby,Kerbin
 				5 = Land,Kerbin
 				5 = Recover
+				6 = Flight,Kerbin
+				6 = Suborbit,Kerbin
+				6 = Orbit,Kerbin
+				6 = Flyby,Mun
+				6 = Escape,Mun
+				6 = Orbit,Mun
+				6 = Suborbit,Mun
+				6 = Land,Mun
+				6 = Flyby,Kerbin
+				6 = Land,Kerbin
+				6 = Recover
+				7 = Flight,Kerbin
+				7 = Suborbit,Kerbin
+				7 = Orbit,Kerbin
+				7 = Flyby,Minmus
+				7 = Escape,Minmus
+				7 = Orbit,Minmus
+				7 = Suborbit,Minmus
+				7 = Land,Minmus
+				7 = Flyby,Kerbin
+				7 = Land,Kerbin
+				7 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 6
+				flight = 8
 			}
 		}
 		KERBAL
@@ -43584,41 +44256,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Chables Kerman
-			gender = Male
-			type = Unowned
-			trait = Scientist
-			brave = 0.298992664
-			dumb = 0.323113084
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Gaboire Kerman
+			name = Matbance Kerman
 			gender = Female
 			type = Unowned
 			trait = Engineer
-			brave = 0.872050166
-			dumb = 0.762173355
+			brave = 0.789114714
+			dumb = 0.641451359
 			badS = False
 			veteran = False
 			tour = False
@@ -43642,41 +44285,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Sigmelin Kerman
-			gender = Male
-			type = Unowned
-			trait = Scientist
-			brave = 0.249183863
-			dumb = 0.614638567
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Duland Kerman
+			name = Victor Kerman
 			gender = Male
 			type = Unowned
 			trait = Pilot
-			brave = 0.64905566
-			dumb = 0.345863134
+			brave = 0.978815734
+			dumb = 0.530830979
 			badS = False
 			veteran = False
 			tour = False
@@ -43700,99 +44314,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Bonnie Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.260418892
-			dumb = 0.629492104
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Heceline Kerman
-			gender = Female
-			type = Unowned
-			trait = Pilot
-			brave = 0.0604709648
-			dumb = 0.355532557
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Naulande Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.675861597
-			dumb = 0.193485811
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Eremy Kerman
+			name = Gauguerrand Kerman
 			gender = Male
 			type = Unowned
-			trait = Pilot
-			brave = 0.818877399
-			dumb = 0.455358177
+			trait = Engineer
+			brave = 0.434105098
+			dumb = 0.124394856
 			badS = False
 			veteran = False
 			tour = False
@@ -43816,12 +44343,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Norca Kerman
+			name = Rombrie Kerman
 			gender = Female
 			type = Unowned
 			trait = Engineer
-			brave = 0.704340577
-			dumb = 0.694348693
+			brave = 0.672968268
+			dumb = 0.303728789
 			badS = False
 			veteran = False
 			tour = False
@@ -43845,12 +44372,215 @@ GAME
 		}
 		KERBAL
 		{
-			name = Roseponte Kerman
+			name = Calface Kerman
 			gender = Female
 			type = Unowned
 			trait = Pilot
-			brave = 0.480610251
-			dumb = 0.605035484
+			brave = 0.377426952
+			dumb = 0.104882024
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Sabine Kerman
+			gender = Female
+			type = Unowned
+			trait = Scientist
+			brave = 0.311735839
+			dumb = 0.548787951
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Dinune Kerman
+			gender = Female
+			type = Unowned
+			trait = Pilot
+			brave = 0.513960123
+			dumb = 0.424692005
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Quencelin Kerman
+			gender = Male
+			type = Unowned
+			trait = Pilot
+			brave = 0.518050551
+			dumb = 0.847629309
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jocas Kerman
+			gender = Female
+			type = Unowned
+			trait = Pilot
+			brave = 0.837475359
+			dumb = 0.475060195
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Pierrick Kerman
+			gender = Male
+			type = Unowned
+			trait = Scientist
+			brave = 0.396393627
+			dumb = 0.230436683
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Marine Kerman
+			gender = Female
+			type = Unowned
+			trait = Scientist
+			brave = 0.115786374
+			dumb = 0.399069995
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Sidroch Kerman
+			gender = Male
+			type = Unowned
+			trait = Engineer
+			brave = 0.928783536
+			dumb = 0.407961935
 			badS = True
 			veteran = False
 			tour = False
@@ -43874,12 +44604,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Gusdas Kerman
+			name = Frandun Kerman
 			gender = Male
 			type = Unowned
-			trait = Pilot
-			brave = 0.612605214
-			dumb = 0.459390998
+			trait = Engineer
+			brave = 0.376092553
+			dumb = 0.566957951
 			badS = False
 			veteran = False
 			tour = False
@@ -43903,99 +44633,41 @@ GAME
 		}
 		KERBAL
 		{
-			name = Pierlan Kerman
+			name = Richacette Kerman
+			gender = Female
+			type = Unowned
+			trait = Scientist
+			brave = 0.257609755
+			dumb = 0.987317562
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Gervais Kerman
 			gender = Male
 			type = Unowned
-			trait = Scientist
-			brave = 0.614507854
-			dumb = 0.608842373
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Alquinne Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.636406839
-			dumb = 0.288186461
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Dindebelle Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.914051592
-			dumb = 0.619106591
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Laudosse Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.425570548
-			dumb = 0.691329122
+			trait = Engineer
+			brave = 0.160863534
+			dumb = 0.0559331365
 			badS = False
 			veteran = False
 			tour = False
@@ -44021,6 +44693,198 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
+		MESSAGE
+		{
+			title = Contrat terminé
+			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nL'excursion a été un franc succès ! César et Joadinand n'ont(n'a) pas tari d'éloges sur le voyage et (a)ont ramené plein de photos.~n~n<b><color=#8BED8B>Récompenses de réussite:</color></b> ~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+0)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 17 <color=#feb200>(-1)</color>  </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de César : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 48,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Joadinand : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 24,375   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contrat terminé
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nL'excursion a été un franc succès ! Roseponte, Gusdas, Pierlan, Alquinne, Dindebelle et Laudosse n'ont(n'a) pas tari d'éloges sur le voyage et (a)ont ramené plein de photos.~n~n<b><color=#8BED8B>Récompenses de réussite:</color></b> ~n<color=#6DCFF6><sprite="CurrencySpriteAsset" name="Science" tint=1> <color=#caff00>(+1)</color>  </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 23 <color=#feb200>(-1)</color>  </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Roseponte : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 146,250   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Pierlan : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 109,688   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Dindebelle : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 146,250   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur Minmus : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,125   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur Minmus : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Minmus : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez deux touristes sans encombre à leurs destinations.</b>~n~nSurvoler Minmus : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 8,125   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nSurvoler Minmus : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Gusdas : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 117,000   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage d’Alquinne : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 117,000   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nItinéraire de voyage de Laudosse : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 87,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nAtterrir sur La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nSurvoler La Mune : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nOrbiter autour de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nVol suborbital au-dessus de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 12,188   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Objectifs du contrat remplis
+			message = <b>Transportez six touristes sans encombre à leurs destinations.</b>~n~nVol suborbital au-dessus de Kerbin : Réussite !~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
+			color = 2
+			icon = 3
+			read = False
+		}
 		MESSAGE
 		{
 			title = Contrat terminé
